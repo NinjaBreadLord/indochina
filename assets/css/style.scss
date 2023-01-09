@@ -1,3 +1,5 @@
+---
+---
 
 @import "minima";
 @import "{{ site.theme }}";
@@ -11,13 +13,13 @@ $blue: #2541b2;
 .navbar {
   background: $light; // see how instead of having to retype the hexadecimal, I can just reference it like this WOWOW so COOL
   height: 80px;
-  display: flex;
+    display: flex;
   justify-content: space-between;
   padding: 0.5rem calc((100vw - 1200px) / 2);
   z-index: 10;
   position: relative;
-}
-
+  }
+  
 .hero {
   background-color: $light; // see how the rest of the code is indented / nested within .hero
   
@@ -128,5 +130,3 @@ $blue: #2541b2;
     }
   }
   }
-  
-  
