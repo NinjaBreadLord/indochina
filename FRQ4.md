@@ -15,7 +15,7 @@
       </style>  
   <script>
     // Deployed API URL
-        const API_URL = 'https://everittcheng.tk/api/inputColor/';
+        const API_URL = 'https://everittcheng.tk/api/lightboard/make/5/2';
         const tableContainer = document.getElementById("table-container");
         const refreshButton = document.getElementById('refresh-button');
         function refreshTable() {
