@@ -20,7 +20,7 @@
       </style>  
   <script>
     // Deployed API URL
-        const API_URL = ;
+        const API_URL = 'https://everittcheng.tk/api/calendar/';
         document.getElementById('calendar-form-1').addEventListener('submit', (event) => {
             event.preventDefault();
             var year1 = document.getElementById('year-1').value;
