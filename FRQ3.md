@@ -3,26 +3,28 @@
     <title> Calculator</title>
   </head>
 
-<a> Division - 除 </a>
-<a> Remainder - R </a>
-<a> GCD - GCD </a>
-<a> Square Root - sqrt </a>
+<ul>
+  <li> Remainder - R </li>
+  <li> GCD - GCD </li>
+  <li> Square Root - sqrt </li>
+</ul>
 
-<p id="eqResult"></p>
+<p id="equationResult"></p>
 
 <input id="inputEq" placeholder="Input equation here">
     <button onclick="getInputEq()">Calculate Equation</button>
 
 <script>
+  <ul>
     function getEq(eq) {
-        let eq = document.getElementById("inputEq").value;
+        let equation = document.getElementById("inputEq").value;
 
-        eqResult = document.getElementById("eqResult");
-        fetch('https://everittcheng.tk/api/calculator/' + eq)
+        equationResult = document.getElementById("equationResult");
+        fetch('https://everittcheng.tk/api/calculator/' + equation)
         .then(response => response.json())
         .then(data => { 
             console.log(data);
-            eqResult.innerHTML = "Answer: " + data.Result;
+            equationResult.innerHTML = "Answer: " + data.Result;
         })
     }
 </script>
