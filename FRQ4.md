@@ -1,3 +1,5 @@
+{% include home.html %}
+
 <h1> Lightboard API (FRQ4) </h1>
   <body>
     <form method="POST" id="createuser">
