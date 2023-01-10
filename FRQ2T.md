@@ -1,6 +1,8 @@
 # FRQ 2
 
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+<head>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+</head>
 
 <form id="form">
   Email: <input type="text" id="email"><br>
