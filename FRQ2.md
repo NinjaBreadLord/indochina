@@ -19,7 +19,7 @@
 
 <table id="table">
   <tr>
-   <th>ID</th>
+    <th>ID</th>
     <th>Email</th>
     <th>Password</th>
     <th>Name</th>
@@ -39,6 +39,12 @@
 <script>
 
 function submit() {
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const name = document.getElementById('name').value;
+    const dob = document.getElementById('dob').value;
+    const height = document.getElementById('height').value;
+    const weight = document.getElementById('weight').value;
     fetch('http://everittcheng.tk/api/person/post', {
     method: 'POST',
     body: 'email=${email}&password=${password}&name=${name}&dob=${dob}&height=${height}&weight=${weight}',
@@ -47,12 +53,7 @@ function submit() {
       show();
     }
   });
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const name = document.getElementById('name').value;
-    const dob = document.getElementById('dob').value;
-    const height = document.getElementById('height').value;
-    const weight = document.getElementById('weight').value;
+
 
   
 }
@@ -80,19 +81,6 @@ function show() {
     }
   });
 }
-function getAge() {
-    id1 = document.getElementById("getA");
-    fetch('http://everittcheng.tk/api/getAge/' + id1)
-    if((response.ok)){.then(response => {
-        
-
-
-    
-    .then(got => {
-        console.log(got);
-        id1.innerHTML = "Age: " + got.name;
-    })
-}}
 
 
 show();
