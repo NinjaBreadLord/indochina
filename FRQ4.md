@@ -1,5 +1,12 @@
 <title> Lightboard API </title>
   <body>
+    <form method="POST" id="createuser">
+      <label for = "row" class = "label-1">Email:</label><br>
+      <input type = "text" id = "row" name = "row" class = "input-1"><br>
+      <label for = "column" class = "label-1">Password:</label><br>
+      <input type = "text" id = "column" name = "column" class = "input-1"><br>
+      <input value="Submit" type="submit" class="button"/>
+  <form>
     <style>
       .row {
           align-items: center;
