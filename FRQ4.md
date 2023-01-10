@@ -22,7 +22,7 @@
       }
       </style>  
   <script>
-    // Deployed API URL
+    // Deployed API UR
         const API_URL = 'https://everittcheng.tk/api/lightboard/make/5/2';
         const tableContainer = document.getElementById("table-container");
         const refreshButton = document.getElementById('refresh-button');
