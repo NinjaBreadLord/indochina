@@ -12,10 +12,10 @@
 <p id="equationResult"></p>
 
 <input id="inputEq" placeholder="Input equation here">
-    <button onclick="getInputEq()">Calculate Equation</button>
+    <button onclick="getEq()">Calculate Equation</button>
 
 <script>
-    function getEq(eq) {
+    function getEq() {
         let equation = document.getElementById("inputEq").value;
         equationResult = document.getElementById("equationResult");
         fetch('https://everittcheng.tk/api/calculator/' + equation)
