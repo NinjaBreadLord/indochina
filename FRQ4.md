@@ -2,7 +2,7 @@
 
 <h1> Lightboard API (FRQ4) </h1>
   <body>
-    <form method="POST" id="createuser">
+    <form id="lightboard">
       <label for = "row" class = "label-1">Row:</label><br>
       <input type = "text" id = "row" name = "row" class = "input-1"><br>
       <label for = "column" class = "label-1">Column:</label><br>
@@ -22,7 +22,7 @@
       }
       </style>  
   <script>
-    // Deployed API UR
+    // Deployed API URL
         const API_URL = 'https://everittcheng.tk/api/lightboard/make/5/2';
         const tableContainer = document.getElementById("table-container");
         const refreshButton = document.getElementById('refresh-button');
