@@ -8,7 +8,6 @@
       <input type = "text" id = "row" name = "row" class = "input-1"><br>
       <label for = "column" class = "label-1">Column:</label><br>
       <input type = "text" id = "column" name = "column" class = "input-1"><br>
-      <input id="lightboard" placeholder="Submit">
         <button onclick="lightboard()">Submit</button>
   <form>
     <style>
