@@ -1,7 +1,4 @@
-<html>
-  <head>
-    <title> Lightboard API </title>
-  </head>
+<title> Lightboard API </title>
   <body>
     <style>
       .row {
