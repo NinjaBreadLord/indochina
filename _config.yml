@@ -1,6 +1,5 @@
-theme: jekyll-theme-midnight
-title: "Leuck Family Reunion"
-description: "Frank P Leuck and Judith Sherwood Leuck reunion site and blog."
-gitorg: "https://github.com/jm1021/leuck_reunion"
-description: "June 26 to July 1 2023"
+theme: jekyll-theme-monophase
+title: "Team Indochina"
+description: "Blog for Team Indochina APCSA FRQs."
+gitorg: ""
 google_analytics:
