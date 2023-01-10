@@ -53,4 +53,3 @@ refreshButton.addEventListener('click', refreshTable);
         
   </script>
   </body>
-</html>
