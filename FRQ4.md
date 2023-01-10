@@ -1,4 +1,4 @@
-<title> Lightboard API </title>
+<h1> Lightboard API </h1>
   <body>
     <form method="POST" id="createuser">
       <label for = "row" class = "label-1">Row:</label><br>
