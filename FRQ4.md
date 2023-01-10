@@ -1,6 +1,6 @@
 {% include home.html %}
 
-<h1> Lightboard API (FRQ4) </h1>
+<h1> Lightboard API</h1>
   <body>
   <p id="notLightboard"></p>
     <form id="lightboard">
@@ -8,18 +8,18 @@
       <input type = "text" id = "row" name = "row" class = "input-1"><br>
       <label for = "column" class = "label-1">Column:</label><br>
       <input type = "text" id = "column" name = "column" class = "input-1"><br>
-        <button onclick="lightboard()">Submit</button>
+      <button onclick="lightboard()">Submit</button>
   <form>
-    <style>
-      .row {
-          align-items: center;
-          display: flex;
-      }
-      .column {
-          flex: 33.33%;
-          padding: 5px;
-      }
-      </style>  
+  <style>
+    .row {
+        align-items: center;
+        display: flex;
+    }
+    .column {
+        flex: 33.33%;
+        padding: 5px;
+    }
+    </style>  
   <script>
     // Deployed API URL
         function lightboard() {
@@ -35,4 +35,4 @@
     }
         
   </script>
-  </body>
+</body>
