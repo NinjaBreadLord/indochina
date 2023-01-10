@@ -1,3 +1,5 @@
+ {% include home.html %}
+ 
   <form method="POST" id="createuser">
     <label for = "email" class = "label-1">Email:</label><br>
     <input type = "text" id = "email" name = "email" class = "input-1"><br>

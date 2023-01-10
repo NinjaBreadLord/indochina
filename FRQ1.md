@@ -1,5 +1,5 @@
 {% include home.html %}
-html>
+<html>
   <head>
     <title> Put in da Date Birth Kiddo </title>
   </head>

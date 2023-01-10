@@ -1,3 +1,5 @@
+{% include home.html %}
+
 <html>
   <head>
     <title> Calculator</title>
