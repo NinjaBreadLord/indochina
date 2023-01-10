@@ -37,6 +37,7 @@
                 isLeapYearCell.innerHTML = data.isLeapYear;
             });
         });
+        
   </script>
   </body>
 </html>
