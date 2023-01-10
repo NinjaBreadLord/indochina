@@ -15,10 +15,8 @@
     <button onclick="getInputEq()">Calculate Equation</button>
 
 <script>
-  <ul>
     function getEq(eq) {
         let equation = document.getElementById("inputEq").value;
-
         equationResult = document.getElementById("equationResult");
         fetch('https://everittcheng.tk/api/calculator/' + equation)
         .then(response => response.json())
