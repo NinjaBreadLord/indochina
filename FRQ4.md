@@ -1,6 +1,6 @@
 {% include home.html %}
 
-<h1> Lightboard API (FRQ4) </h1>
+<h1> Lightboard API</h1>
   <body>
   <p id="notLightboard"></p>
     <form id="lightboard">
