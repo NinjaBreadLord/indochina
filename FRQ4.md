@@ -1,4 +1,4 @@
-<h1> Lightboard API </h1>
+<h1> Lightboard API (FRQ4) </h1>
   <body>
     <form method="POST" id="createuser">
       <label for = "row" class = "label-1">Row:</label><br>
