@@ -5,7 +5,7 @@
       <input type = "text" id = "row" name = "row" class = "input-1"><br>
       <label for = "column" class = "label-1">Column:</label><br>
       <input type = "text" id = "column" name = "column" class = "input-1"><br>
-      <a href="https://everittcheng.tk/api/lightboard/make/5/2"
+      <a href='https://everittcheng.tk/api/lightboard/make/row/column'>
         <input value="Submit" type="submit" class="button"/>
       </a>
   <form>
