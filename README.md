@@ -1,3 +1,5 @@
+{% include home.html %}
+
 ## The Reunion Project
 
 Usage
