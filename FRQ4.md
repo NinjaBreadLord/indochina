@@ -7,8 +7,8 @@
     <input type = "text" id = "row" name = "row" class = "input-1"><br>
     <label for = "column" class = "label-1">Column:</label><br>
     <input type = "text" id = "column" name = "column" class = "input-1"><br>
-    <button onclick="lightboard()">Submit</button>
 <form>
+    <button onclick="lightboard()">Submit</button>
 <style>
   .row {
       align-items: center;
