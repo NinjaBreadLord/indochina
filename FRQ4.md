@@ -2,7 +2,7 @@
 
 <h1> Lightboard API</h1>
 <script>
-  // Deployed API URL
+  // Deployed API URI
       function lightboard() {
         let lightboard1 = document.getElementbyId("row").value;
         let result = document.getElementbyId("notLightboard");
