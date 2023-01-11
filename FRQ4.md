@@ -18,7 +18,6 @@
   }
   </style>  
 <script>
-  // Deployed API URL
       function lightboard() {
         let lightboard1 = document.getElementbyId("row").value;
         let result = document.getElementbyId("notLightboard");
