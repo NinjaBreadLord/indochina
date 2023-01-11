@@ -6,7 +6,7 @@
 </table>
 
 
-<form>
+<form id = "year-form">
   <label for = "year" class = "label"> Enter a year:<label><br>
   <input type = "number" id = "year" name = "year" class = "input"><br>
   <input type = "submit" class = "button">
@@ -16,9 +16,11 @@
 
 let table = document.getElemenetById("year");
 
+document.getElementById("year-form").addEventListener('submit',  getYear());
+
 function getYear(){
     let inputYear = document.getElementById("inputYear").value;
-    return inputYear;
+    isLeapYear(inputYear);
 }
 
 function isLeapYear(year) {
