@@ -25,7 +25,7 @@ function getYear(){
 
 function isLeapYear(year) {
     // Fetch data from API
-    fetch("https://everittcheng.tk/api/calendar/" + year)
+    fetch("https://everittcheng.tk/api/calendar/isLeapYear/" + year)
     .then(response => response.json())
     .then(data =>  {
               // Output data to table
