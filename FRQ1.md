@@ -19,12 +19,12 @@
 </style>  
 <script>
   // Deployed API URL
-      const API_URL = 'https://everittcheng.tk/api/calendar/';
+      const API_URL = "https://everittcheng.tk/api/calendar/";
       document.getElementById('calendar-form-1').addEventListener('submit', (event) => {
           event.preventDefault();
           var year1 = document.getElementById('year-1').value;
           // Combine API URL with expression.
-          fetch(${API_URL}/isLeapYear/${year1})
+          fetch("https://everittcheng.tk/api/calendar/" + year)
           .then(response => response.json())
           .then(data => {
               // Output data to table
