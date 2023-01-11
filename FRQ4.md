@@ -2,12 +2,10 @@
 
 <h1> Lightboard API</h1>
 <p id="notLightboard"></p>
-  <form id="lightboard">
     <label for = "row" class = "label-1">Row:</label><br>
     <input type = "text" id = "row" name = "row" class = "input-1"><br>
     <label for = "column" class = "label-1">Column:</label><br>
     <input type = "text" id = "column" name = "column" class = "input-1"><br>
-<form>
     <button onclick="lightboard()">Submit</button>
 <style>
   .row {
