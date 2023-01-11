@@ -1,4 +1,10 @@
-<table></table>
+<table id="year">
+    <tr>
+        <th>Year 1</th>
+        <th>isLeapYear</th>
+    </tr>
+</table>
+
 
 <form>
   <label for = "year" class = "label"> Enter a year:<label><br>
