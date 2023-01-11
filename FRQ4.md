@@ -8,7 +8,7 @@
         let result = document.getElementbyId("notLightboard");
         let lightboard2 = document.getElementbyId("column").value;
         fetch('https://everittcheng.tk/api/lightboard/make' + "/" + lightboard1 + "/" + lightboard2)
-        .then(response ==> response.json())
+        .then(response => response.json())
         .then(data => {
             console.log(data);
             notLightboard.innerHTML = "Output: " + data.Result;
