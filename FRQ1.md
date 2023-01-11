@@ -1,4 +1,4 @@
-<table id="year">
+<table id="year-table">
     <tr>
         <th>Year 1</th>
         <th>isLeapYear</th>
@@ -24,15 +24,12 @@ function getYear(){
 }
 
 function isLeapYear(year) {
-    
-    result = document.getElementById("isLeapYearResult");
-    console.log(yearparam);
     // Fetch data from API
     fetch("https://everittcheng.tk/api/calendar/" + year)
     .then(response => response.json())
     .then(data =>  {
               // Output data to table
-              const table = document.getElementById('results');
+              const table = document.getElementById('year-table');
               const row = table.insertRow(-1);
               const Cell = row.insertCell(0);
               const isLeapYearCell = row.insertCell(1);
@@ -41,5 +38,3 @@ function isLeapYear(year) {
           });
       };
 </script>
-
-
