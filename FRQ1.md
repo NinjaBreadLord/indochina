@@ -2,22 +2,21 @@
 <head>
   <title> Put in da Date Birth Kiddo </title>
 </head>
-<body>
-  <form>
-    <label for = "year" class = "label"> Enter a year:<label><br>
-    <input type = "number" id = "year" name = "year" class = "input"><br>
-    <input type = "submit" class = "button">
-  </form>
-  <style>
-    .row {
-        align-items: center;
-        display: flex;
-    }
-    .column {
-        flex: 33.33%;
-        padding: 5px;
-    }
-    </style>  
+<form>
+  <label for = "year" class = "label"> Enter a year:<label><br>
+  <input type = "number" id = "year" name = "year" class = "input"><br>
+  <input type = "submit" class = "button">
+</form>
+<style>
+  .row {
+      align-items: center;
+      display: flex;
+  }
+  .column {
+      flex: 33.33%;
+      padding: 5px;
+  }
+</style>  
 <script>
   // Deployed API URL
       const API_URL = 'https://everittcheng.tk/api/calendar/';
@@ -38,4 +37,3 @@
           });
       });
 </script>
-</body>
