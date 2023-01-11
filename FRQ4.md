@@ -2,11 +2,14 @@
 
 <h1> Lightboard API</h1>
 <p id="notLightboard"></p>
+  <form id="lightboard">
     <label for = "row" class = "label-1">Row:</label><br>
     <input type = "text" id = "row" name = "row" class = "input-1"><br>
     <label for = "column" class = "label-1">Column:</label><br>
     <input type = "text" id = "column" name = "column" class = "input-1"><br>
-    <button onclick="lightboard()">Submit</button>
+  </form>
+      <input id="inputEq">
+        <button onclick="lightboard()">Submit</button>
 <style>
   .row {
       align-items: center;
@@ -18,6 +21,7 @@
   }
   </style>  
 <script>
+  // Deployed API URL
       function lightboard() {
         let lightboard1 = document.getElementbyId("row").value;
         let result = document.getElementbyId("notLightboard");
