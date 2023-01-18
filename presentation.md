@@ -1,12 +1,12 @@
 <h1>Plan</h1>
-<img src="images/s1.png" alt="s1" width="800" height="400" style = "margin-top:10px">
-<img src="images/s2.png" alt="s2" width="800" height="400" style = "margin-top:10px">
-<img src="images/s3.png" alt="s3" width="800" height="400" style = "margin-top:10px; margin-bottom:40px;">
+<img src="images/s1.PNG" alt="s1" width="800" height="400" style = "margin-top:10px">
+<img src="images/s2.PNG" alt="s2" width="800" height="400" style = "margin-top:10px">
+<img src="images/s3.PNG" alt="s3" width="800" height="400" style = "margin-top:10px; margin-bottom:40px;">
 
 <h1>Wireframes</h1>
-<img src="images/s4.png" alt="s4" width="800" height="400" style = "margin-top:10px">
-<img src="images/s5.png" alt="s5" width="800" height="400" style = "margin-top:10px">
-<img src="images/s6.png" alt="s6" width="800" height="400" style = "margin-top:10px">
+<img src="images/s4.PNG" alt="s4" width="800" height="400" style = "margin-top:10px">
+<img src="images/s5.PNG" alt="s5" width="800" height="400" style = "margin-top:10px">
+<img src="images/s6.PNG" alt="s6" width="800" height="400" style = "margin-top:10px">
 <a href="https://ninjabreadlord.github.io/indochina/idea" style = "font-size: 15px;">html example for creating a recipe</a>
 
 <h1>Agile</h1>
