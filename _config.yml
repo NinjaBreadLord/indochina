@@ -1,5 +1,7 @@
-theme: jekyll-theme-midnight
-title: "Team Indochina"
-description: "Blog for Team Indochina APCSA FRQs."
-gitorg: ""
-google_analytics:
+remote_theme: mmistakes/minimal-mistakes
+plugins:
+- jekyll-remote-theme
+title: "The Book of Cook"
+description: "Home of all the book of cooks"
+gitorg: "https://NinjaBreadLord.github.io"
+baseurl: /bookofcook
