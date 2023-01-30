@@ -1,50 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatitble" content="IE-edge">
-  <meta name = "viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cusisine of the World!<title>
-</head>
-<style>
-  *{
-    margin: 0;
-    padding: 0;
-  }
-  body{
-    background-color: #004C99;
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-</style>
-<body>
+<img src="daWorld.PNG" alt="world" usemap="#image_map">
 
-  <?xml version="1.0"?>
-
-  <div id="Region">
-    <p id="regionp">Region</p>
-  </div>
-
-  <div id="Description">
-    <p id="descriptionp">Description</p>
-  </div>
-
- 
-</body>
-</html>
-
-
-<!--
-<div id="world-map">
-<img src="world-map.jpg" alt="World Map">
-<div class="region" id="Latin-American" data-tooltip="Region 1"></div>
-<div class="region" id="South-Asian" data-tooltip="Region 2"></div>
-<div class="region" id="East/Southeast-Asian" data-tooltip="Region 3"></div>
-<div class="region" id="Middle-Eastern/North-African" data-tooltip="Region 4"></div>
-<div class="region" id="Central Asian" data-tooltip="Region 5"></div>
-<div class="region" id="European" data-tooltip="Region 6"></div>
-<div class="region" id="Native-American/Siberian" data-tooltip="Region 7"></div>
-<div class="region" id="Sub-Saharan-African" data-tooltip="Region 8"></div>
-<div class="region" id="Polynesia/Oceania" data-tooltip="Region 9"></div>
-<div class="region" id="North-American" data-tooltip="Region 10"></div>
-</div>--!>
+<map name="world">
+  <area shape="rect" coords="" alt="South Asia" href="https://www.cia.gov/the-world-factbook/south-asia/">
+  <area shape="rect" coords="" alt="East and Southeast Asia" href="https://www.cia.gov/the-world-factbook/east-and-southeast-asia/">
+  <area shape="circle" coords="" alt="Europe" href="https://www.cia.gov/the-world-factbook/europe/">
+  <area shape="rect" coords="" alt="Oceania" href="https://www.cia.gov/the-world-factbook/australia-and-oceania/">
+  <area shape="rect" coords="" alt="North Africa, Middle East, and Central Asia" href="https://open.lib.umn.edu/worldgeography/chapter/8-8-end-of-chapter-material/#:~:text=North%20Africa%2C%20Southwest%20Asia%2C%20and%20Central%20Asia%20%28Turkestan%29,areas%20of%20all%20three%20regions%20of%20the%20realm.">
+  <area shape="circle" coords="" alt="Sub Saharan Africa" href="https://www.cia.gov/the-world-factbook/africa/">
+  <area shape="rect" coords="" alt="The Americas" href="https://www.britannica.com/place/Americas">
+</map>
