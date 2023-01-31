@@ -5,14 +5,6 @@
     <input type = "text" id = "email" name = "email" class = "input-1"><br>
     <label for = "password" class = "label-1">Password:</label><br>
     <input type = "password" id = "password" name = "password" class = "input-1"><br>
-    <label for = "name" class = "label-1">Name:</label><br>
-    <input type = "text" id = "name" name = "name" class = "input-1"><br>
-    <label for = "dob" class = "label-1">Date of Birth:</label><br>
-    <input type = "text" id = "dob" name = "dob" class = "input-1"><br>
-    <label for = "height" class = "label-1">Height:</label><br>
-    <input type = "text" id = "height" name = "height" class = "input-1"><br>
-    <label for = "weight" class = "label-1">Weight:</label><br>
-    <input type = "text" id = "weight" name = "weight" class = "input-1"><br>
     <input value="Submit" type="submit" class="button"/>
   <form>
 
@@ -23,9 +15,6 @@
         <th>id</th>
         <th>email</th>
         <th>password</th>
-        <th>name</th>
-        <th>height</th>
-        <th>weight</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -33,31 +22,12 @@
 
 <script>
 
-      function inputper(event) {
-        event.preventDefault();
-
-        const data = new FormData(event.target);
-
-        const urldata = new URLSearchParams(data).toString();
-    
-        fetch("https://everittcheng.tk/api/person/post/?" + urldata, {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json"
-          }
-        })
-        
-      }
-
-      const make = document.getElementById("createuser");
-      make.addEventListener("submit", inputper);
-
+      
 
   const userz = document.getElementById("personlist");
 
 
-  const url = "https://everittcheng.tk/api/person/";
+  const url = "https://everittcheng.tk/api/login/";
 
   const options = {
       method: 'GET', 
@@ -91,26 +61,23 @@
               const id = document.createElement("td");
               const email = document.createElement("td");
               const password = document.createElement("td");
-              const name = document.createElement("td");
-              const height = document.createElement("td");
-              const weight = document.createElement("td");
+
 
               id.innerHTML = row.id;
               email.innerHTML = row.email;
               password.innerHTML = row.password;
-              name.innerHTML = row.name;
-              height.innerHTML = row.height;
-              weight.innerHTML = row.weight;
 
 
+              if (row.email == "bad@gmail.com") {
+                const passw = row.password;
+                window.alert(passw);
+              }
 
 
               tr.appendChild(id);
               tr.appendChild(email);
               tr.appendChild(password);
-              tr.appendChild(name)
-              tr.appendChild(height);
-              tr.appendChild(weight);
+
 
 
               userz.appendChild(tr);
