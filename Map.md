@@ -1,4 +1,4 @@
-<img src="daWorld.png" alt="world" usemap="#image_map">
+<img src="images/daWorld.png" alt="world" usemap="#image_map">
 
 <map name="world">
   <area shape="rect" coords="1361,374,1546,589" alt="South Asia" href="https://www.cia.gov/the-world-factbook/south-asia/">
