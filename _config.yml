@@ -3,4 +3,4 @@ title: "The Book of Cook"
 description: "Home of all the book of cooks"
 gitorg: "https://ninjabreadlord.github.io"
 baseurl: /indochina
-fixed_navbar: top
+# fixed_navbar: top
