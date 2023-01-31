@@ -9,16 +9,7 @@
   <form>
 
 
-  <table id = "personlist">
-    <thead>
-      <tr>
-        <th>id</th>
-        <th>email</th>
-        <th>password</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
+
 
 <script>
 
@@ -73,22 +64,12 @@
               if (row.email == email1) {
                 const passw = row.password;
                 if(passw == password1) {
-                    location.replace("https://www.w3schools.com");
+                    location.replace("https://ninjabreadlord.github.io/indochina/loginlist");
                 }
                 else {
                     window.alert("incorrect login");
                 }
-              }
-
-
-              tr.appendChild(id);
-              tr.appendChild(email);
-              tr.appendChild(password);
-
-
-
-              userz.appendChild(tr);
-              
+              }              
             }
         })
     })
