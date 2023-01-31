@@ -1,14 +1,13 @@
 {% include home.html %}
 
+<h1 style = "text-align: center">Logins List</h1>
+
 <table id = "personlist">
     <thead>
       <tr>
         <th>id</th>
         <th>email</th>
         <th>password</th>
-        <th>name</th>
-        <th>height</th>
-        <th>weight</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -52,24 +51,18 @@
               const id = document.createElement("td");
               const email = document.createElement("td");
               const password = document.createElement("td");
-              const name = document.createElement("td");
-              const height = document.createElement("td");
-              const weight = document.createElement("td");
+
 
               id.innerHTML = row.id;
               email.innerHTML = row.email;
               password.innerHTML = row.password;
-              name.innerHTML = row.name;
-              height.innerHTML = row.height;
-              weight.innerHTML = row.weight;
+
 
 
               tr.appendChild(id);
               tr.appendChild(email);
               tr.appendChild(password);
-              tr.appendChild(name)
-              tr.appendChild(height);
-              tr.appendChild(weight);
+
 
 
               userz.appendChild(tr);

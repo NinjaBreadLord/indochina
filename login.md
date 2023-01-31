@@ -1,5 +1,7 @@
  {% include home.html %}
  
+ <h1 style = "text-align: center">Login</h1>
+
   <form action="javascript:showList()">
     <label for = "email" class = "label-1">Email:</label><br>
     <input type = "text" id = "email" name = "email" class = "input-1"><br>
