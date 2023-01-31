@@ -10,7 +10,7 @@
     fetch('https://everittcheng.tk/api/lightboard/make' + '/' + lightboard1 + '/' + lightboard2)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        console.log(data); 
         notLightboard.innerHTML = "Output: " + data.Result;
     })
   }

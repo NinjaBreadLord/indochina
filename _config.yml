@@ -1,7 +1,6 @@
-remote_theme: chrisrhymes/bulma-clean-theme
-plugins:
-- jekyll-remote-theme
+theme: bulma-clean-theme
 title: "The Book of Cook"
 description: "Home of all the book of cooks"
-gitorg: "https://NinjaBreadLord.github.io"
-baseurl: /bookofcook
+gitorg: "https://ninjabreadlord.github.io"
+baseurl: /indochina
+# fixed_navbar: top
