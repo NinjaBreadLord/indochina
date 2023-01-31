@@ -39,7 +39,7 @@
         const data = new FormData(event.target);
 
         const urldata = new URLSearchParams(data).toString();
-
+        alert(urldata);
         fetch("https://everittcheng.tk/api/person/post/?" + urldata, {
           method: "POST",
           mode: "no-cors",
