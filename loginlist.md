@@ -1,23 +1,6 @@
- {% include home.html %}
- 
-  <form method="POST" id="createuser">
-    <label for = "email" class = "label-1">Email:</label><br>
-    <input type = "text" id = "email" name = "email" class = "input-1"><br>
-    <label for = "password" class = "label-1">Password:</label><br>
-    <input type = "password" id = "password" name = "password" class = "input-1"><br>
-    <label for = "name" class = "label-1">Name:</label><br>
-    <input type = "text" id = "name" name = "name" class = "input-1"><br>
-    <label for = "dob" class = "label-1">Date of Birth:</label><br>
-    <input type = "text" id = "dob" name = "dob" class = "input-1"><br>
-    <label for = "height" class = "label-1">Height:</label><br>
-    <input type = "text" id = "height" name = "height" class = "input-1"><br>
-    <label for = "weight" class = "label-1">Weight:</label><br>
-    <input type = "text" id = "weight" name = "weight" class = "input-1"><br>
-    <input value="Submit" type="submit" class="button"/>
-  <form>
+{% include home.html %}
 
-
-  <table id = "personlist">
+<table id = "personlist">
     <thead>
       <tr>
         <th>id</th>
@@ -29,35 +12,13 @@
       </tr>
     </thead>
     <tbody></tbody>
-  </table>
+</table>
 
 <script>
-
-      function inputper(event) {
-        event.preventDefault();
-
-        const data = new FormData(event.target);
-
-        const urldata = new URLSearchParams(data).toString();
-        alert(urldata);
-        fetch("https://everittcheng.tk/api/person/post/?" + urldata, {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json"
-          }
-        })
-        
-      }
-
-      const make = document.getElementById("createuser");
-      make.addEventListener("submit", inputper);
+    const userz = document.getElementById("personlist");
 
 
-  const userz = document.getElementById("personlist");
-
-
-  const url = "https://everittcheng.tk/api/person/";
+  const url = "https://everittcheng.tk/api/login/";
 
   const options = {
       method: 'GET', 
