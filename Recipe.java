@@ -2,6 +2,7 @@ import java.net.URI;
 import java.net.http.HttpResponse;
 import java.net.http.*;
 
+//Creating API Class here, implement it to output JSON Data in future
 public class Recipe {
     public static void main(String[] args ) throws Exception{
         HttpRequest request = HttpRequest.newBuilder()
