@@ -1,6 +1,6 @@
  {% include home.html %}
  
-  <form method="POST" id="createuser">
+  <form action="javascript:showList()">
     <label for = "email" class = "label-1">Email:</label><br>
     <input type = "text" id = "email" name = "email" class = "input-1"><br>
     <label for = "password" class = "label-1">Password:</label><br>
@@ -41,6 +41,8 @@
 
 
   function showList() {
+    const email1 = document.getElementById("email").value;
+    const password1 = document.getElementById("password").value;
     fetch(url, options)
       .then(response => {
         if (response.status !== 200) {
@@ -68,9 +70,14 @@
               password.innerHTML = row.password;
 
 
-              if (row.email == "bad@gmail.com") {
+              if (row.email == email1) {
                 const passw = row.password;
-                window.alert(passw);
+                if(passw == password1) {
+                    location.replace("https://www.w3schools.com");
+                }
+                else {
+                    window.alert("incorrect login");
+                }
               }
 
 
@@ -88,5 +95,5 @@
     
   }
 
-  showList();
+
 </script>
