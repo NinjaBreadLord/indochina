@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Map of the World</h2>
+<p>Click on the map to see the recipes!:</p>
+
 <img src="images/daWorld.png" alt="world" usemap="#image_map">
 
 <map name="world">
@@ -9,3 +16,6 @@
   <area shape="rect" coords="841,460,1183,911" alt="Sub Saharan Africa" href="https://www.cia.gov/the-world-factbook/africa/">
   <area shape="rect" coords="20,72,741,1077" alt="The Americas" href="https://www.britannica.com/place/Americas">
 </map>
+
+</body>
+</html>
