@@ -5,7 +5,7 @@
 <h2>Map of the World</h2>
 <p>Click on the map to see the recipes!:</p>
 
-<img src="image/daWorld.png" usemap="#image-map">
+<img src="images/daWorld.png" usemap="#image-map">
 
 <map name="image-map">
     <area target="_top" alt="South Asia" title="South Asia" href="https://www.cia.gov/the-world-factbook/south-asia/" coords="1365,360,1526,588" shape="rect">
