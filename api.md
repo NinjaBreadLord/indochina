@@ -35,12 +35,19 @@
     <div id="root"></div>
   </body>
   <script>
-    // Create a request variable and assign a new XMLHttpRequest object to it.
     var request = new XMLHttpRequest()
-    // Open a new connection, using the GET request on the URL endpoint
-    request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
+    request.open('GET', 'https://tasty.p.rapidapi.com/recipes/list', true)
     request.onload = function () {
     }
+    // Begin accessing JSON data here
+    var data = JSON.parse(this.response)
+    if (request.status >= 200 && request.status < 400) {
+        data.forEach((recipe) => {
+            console.log(recipe.title)
+    })
+    } else {
+        console.log('error')
+    }   
     request.send()
     </script>
 </html>
