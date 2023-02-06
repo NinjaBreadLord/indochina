@@ -39,10 +39,6 @@
     const container = document.createElement('div')
     container.setAttribute('class', 'container')
     app.appendChild(container)
-    var request = new XMLHttpRequest()
-    request.open('GET', 'https://tasty.p.rapidapi.com/recipes/list', true)
-    request.onload = function () {
-    // Begin accessing JSON data here
         var data = JSON.parse(this.response)
         if (request.status >= 200 && request.status < 400) {
                     HttpRequest request = HttpRequest.newBuilder()
@@ -60,6 +56,5 @@
         app.appendChild(errorMessage)
     }
     }
-    request.send()
 </script>
 </html>
