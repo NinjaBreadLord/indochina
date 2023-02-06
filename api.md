@@ -45,17 +45,14 @@
     // Begin accessing JSON data here
         var data = JSON.parse(this.response)
         if (request.status >= 200 && request.status < 400) {
-        data.forEach((recipe) => {
-        const card = document.createElement('div')
-        card.setAttribute('class', 'card')
-        const h1 = document.createElement('h1')
-        h1.textContent = recipe.title
-        const p = document.createElement('p')
-        recipe.description = recipe.description.substring(0, 300)
-        p.textContent = `${recipe.description}...`
-        container.appendChild(card)
-        card.appendChild(h1)
-        card.appendChild(p)
+                    HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create("https://tasty.p.rapidapi.com/recipes/list"))
+                    .header("X-RapidAPI-Key", "bc9e5f20f9mshfceb3f679afd2b7p1960cdjsn87cb096651ab")
+                    .header("X-RapidAPI-Host", "tasty.p.rapidapi.com")
+                    .method("GET", HttpRequest.BodyPublishers.noBody())
+                    .build();
+            HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
+            System.out.println(response.body());
         })
     } else {
         const errorMessage = document.createElement('marquee')
