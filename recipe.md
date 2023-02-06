@@ -15,7 +15,6 @@ function printRecipe() {
     fetch("https://everittcheng.tk/api/recipe/list")
     .then(response => response.json())
     .then(data =>  {
-              // Output data to table
               const table = document.getElementById('recipe-table');
           });
       };
