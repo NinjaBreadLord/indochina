@@ -2,4 +2,6 @@
   link: /Map
 - name: Sign Up
   link: /signup
+- name: Reviews
+  link: /reviews
   
