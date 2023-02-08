@@ -2,8 +2,6 @@
 layout: page
 title: Recipes List
 ---
-<h1 style = "text-align: center">Logins List</h1>
-
 <table id = "personlist">
     <thead>
       <tr>
