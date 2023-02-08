@@ -40,7 +40,7 @@
 
         const urldata = new URLSearchParams(data).toString();
     
-        fetch("https://everittcheng.tk/api/person/post/?" + urldata, {
+        fetch("https://everittcheng.tk/api/login/post/?" + urldata, {
           method: "POST",
           mode: "no-cors",
           headers: {
@@ -57,7 +57,7 @@
   const userz = document.getElementById("personlist");
 
 
-  const url = "https://everittcheng.tk/api/person/";
+  const url = "https://everittcheng.tk/api/login/";
 
   const options = {
       method: 'GET', 
