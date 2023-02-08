@@ -45,7 +45,8 @@
 
     img {
         margin-left: auto;
-        margin-right: ayto
+        margin-right: auto;
+        border: black;
     }
 
     h2 {
