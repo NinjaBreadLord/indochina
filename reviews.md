@@ -43,10 +43,11 @@
         cursor: pointer;
     }
 
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        border: black;
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
 
     h2 {
@@ -62,7 +63,7 @@
   </style>
   <body>
     <h1>Recipe Reviews</h1>
-    <img src="images/review.png">
+    <img src="images/review.png" class="center">
 
     <form id="review-form">
       <div>
