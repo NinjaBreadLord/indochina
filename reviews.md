@@ -2,9 +2,12 @@
   <head>
     <title>Review Page</title>
   </head>
+  <style>
+    
+  </style>
   <body>
+    <h1>Recipe Reviews</h1>
     <img src="images/review.png">
-    <h1>Product Review</h1>
 
     <form id="review-form">
       <div>
