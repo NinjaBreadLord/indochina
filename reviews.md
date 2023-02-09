@@ -47,7 +47,7 @@
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      width: 45%;
     }
 
     h2 {
@@ -69,6 +69,10 @@
       <div>
         <label for="name">Name:</label>
         <input type="text" id="name" required>
+      </div>
+      <div>
+        <label for="recipe">Recipe:</label>
+        <textarea id="recipe" required></textarea>
       </div>
       <div>
         <label for="review">Review:</label>
