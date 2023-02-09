@@ -37,7 +37,7 @@
 
     button[type="submit"] {
         padding: 10px 20px;
-        background-color: lightblue;
+        background-color: darkblue;
         color: white;
         border: none;
         border-radius: 5px;
