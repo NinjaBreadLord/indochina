@@ -48,6 +48,7 @@
                 console.log(errorMsg);
                 return Promise.reject(errorMsg);
             }
+            return response.json();
         })
         .then(data => {
             localStorage.setItem("token", data.token);
