@@ -6,6 +6,7 @@
     body {
         font-family: sans-serif;
         padding: 20px;
+        background-color: lightblue;
     }
 
     h1 {
