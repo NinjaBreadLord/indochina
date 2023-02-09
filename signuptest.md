@@ -1,25 +1,22 @@
-<form id="createuser">
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="email" required>
-  <label for="password">Password:</label>
-  <input type="password" id="password" name="password" required>
-
-  <!-- Add additional input fields as needed -->
-  
-  <button type="submit">Create Account</button>
-</form>
+  <form action="javascript:signup()">
+    <label for = "email" class = "label-1">Email:</label><br>
+    <input type = "text" id = "email" name = "email" class = "input-1"><br>
+    <label for = "password" class = "label-1">Password:</label><br>
+    <input type = "password" id = "password" name = "password" class = "input-1"><br>
+    <input value="Submit" type="submit" class="button"/>
+  <form>
 
 <script>
-function inputper(event) {
+function signup() {
 
     const data1 = new FormData(event.target);
     const email1 = data1.get("email");
     const password1 = data1.get("password");
 
-    const userz = document.getElementById("personlist");
 
 
-    const url = "https://everittcheng.tk/api/login/";
+    //const url = "https://everittcheng.tk/api/login/";
+    const url = "http://localhost:8195/api/login/"
 
     const options = {
         method: 'GET', 
@@ -32,7 +29,7 @@ function inputper(event) {
     };
 
     // Make a GET request to retrieve a list of all existing emails
-    const response = await fetch(url, options);
+
     fetch(url, options)
         .then(response => {
             if (response.status !== 200) {
@@ -61,29 +58,36 @@ function inputper(event) {
 
 
                 if (row.email == email1) {
-                    var repeat= "repeat";
+                    var repeat = "repeat";
                 }              
                 }
             })
         })
-
+    
     window.alert(repeat);
-    if (repeat == "repeat") {
-        alert("Email already in use.");
-    } else {
-        // Code to send the data to the server and create a new account
-        const urldata = new URLSearchParams(data).toString();
-        fetch("https://everittcheng.tk/api/login/post/?" + urldata, {
-        method: "POST",
-        mode: "no-cors",
-        headers: {
-            "Content-Type": "application/json"
-        }
-        });
-    }
+    // if (repeat == "repeat") {
+    //     window.alert("Email already in use.");
+    // } else {
+    //     function inputper(event) {
+    //         event.preventDefault();
+    //         const data = new FormData(event.target);
+    //         //var purl = "https://everittcheng.tk/api/login/post/?"
+    //         var purl = "http://localhost:8195/api/login/post/?" 
+    //         const urldata = new URLSearchParams(data).toString();
+    //         fetch(purl + urldata, {
+    //             method: "POST",
+    //             mode: "no-cors",
+    //             headers: {
+    //                 "Content-Type": "application/json"
+    //             }
+    //         });
+    //         const make = document.getElementById("createuser");
+    //         make.addEventListener("submit", inputper);
+    //     }
+        
+    // }
     };
 
-const make = document.getElementById("createuser");
-make.addEventListener("submit", inputper);
+
 </script>
 

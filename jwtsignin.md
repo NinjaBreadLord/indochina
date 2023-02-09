@@ -14,8 +14,8 @@
 
 <script>
     // prepare URL's to allow easy switch from deployment and localhost
-    url = "https://everittcheng.tk"
-    // url = "http://localhost:8195"
+    // url = "https://everittcheng.tk"
+    url = "http://localhost:8195"
 
     const login_url = url + '/authenticate';
 
@@ -46,7 +46,7 @@
             if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
                 console.log(errorMsg);
-                return Promise.reject(errorMsg);
+                return
             }
             return response.json();
         })
@@ -56,6 +56,6 @@
         })
         .catch(error => {
             console.error(error);
-        });
+        })
     }
 </script>

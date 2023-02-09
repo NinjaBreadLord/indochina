@@ -23,13 +23,12 @@
   const url = "https://everittcheng.tk/api/login/";
 
   const options = {
-        method: 'POST',
-        mode: 'cors', // no-cors, *cors, same-origin
-        cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: 'include', // include, *same-origin, omit
-        body: JSON.stringify(body),
-        headers: {
-            "content-type": "application/json",
+      method: 'GET', 
+      mode: 'cors', 
+      cache: 'default', 
+      credentials: 'omit', 
+      headers: {
+      'Content-Type': 'application/json'
       },
   };
 
