@@ -14,8 +14,8 @@
 
 <script>
     // prepare URL's to allow easy switch from deployment and localhost
-    // var url = "https://everittcheng.tk"
-    url = "http://localhost:8195"
+    url = "https://everittcheng.tk"
+    // url = "http://localhost:8195"
 
     const login_url = url + '/authenticate';
 
@@ -48,7 +48,6 @@
                 console.log(errorMsg);
                 return Promise.reject(errorMsg);
             }
-            return response.json();
         })
         .then(data => {
             localStorage.setItem("token", data.token);
