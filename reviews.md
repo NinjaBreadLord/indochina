@@ -63,7 +63,6 @@
   </style>
   <body>
     <h1>Recipe Reviews</h1>
-    <img src="images/review.png" class="center">
 
     <form id="review-form">
       <div>
