@@ -22,6 +22,7 @@
       const data = new FormData(event.target);
       const urldata = new URLSearchParams(data).toString();
 
+      //Lowkey ion think this should be local host
       fetch("http://localhost:8195/api/login/post/?" + urldata, {
         method: "POST",
         mode: "no-cors",
