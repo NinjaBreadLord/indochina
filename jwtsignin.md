@@ -14,13 +14,15 @@
 
 <script>
     // prepare URL's to allow easy switch from deployment and localhost
-    // url = "https://everittcheng.tk"
-    url = "http://localhost:8195"
+    url = "https://everittcheng.tk"
+    //url = "http://localhost:8195"
 
     const login_url = url + '/authenticate';
 
 
     function login_user(){
+        const email1 = document.getElementById("uid").value;
+        const password1 = document.getElementById("password").value;
         //Validate Password (must be 6-20 characters in len)
         //verifyPassword("click");
         const body = {
@@ -51,7 +53,8 @@
               }
               return response.text();
             })
-            window.alert("login successful");
+            window.alert("successfully logged in");
+            localStorage.setItem("email", email1);
             // .then(data => {
             //   try {
             //     const jsonData = JSON.parse(data);
