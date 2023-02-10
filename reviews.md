@@ -33,7 +33,7 @@
           width: 500px;
       }
 
-      button[type="submit"] {
+      button {
           padding: 10px 20px;
           background-color: darkblue;
           color: white;
@@ -101,7 +101,7 @@
       <input type="text" id="name" placeholder="Name">
       <input type="text" id="recipe" placeholder="Recipe">
       <input type="text" id="review" placeholder="Review">
-      <button type="submit" onclick="review()">Submit Review</button>
+      <button onclick="review()">Submit Review</button>
     </form>
     <div id="reviews">
     </div>
