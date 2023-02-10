@@ -9,9 +9,10 @@
 <script>
 function signup() {
 
-    const data1 = new FormData(event.target);
-    const email1 = data1.get("email");
-    const password1 = data1.get("password");
+    const userz = document.getElementById("personlist");
+
+    const email1 = document.getElementById("email").value;
+    const password1 = document.getElementById("password").value;
 
 
 
@@ -63,7 +64,8 @@ function signup() {
                 }
             })
         })
-    
+    window.alert(email1);    
+    window.alert(row.email);
     window.alert(repeat);
     // if (repeat == "repeat") {
     //     window.alert("Email already in use.");
