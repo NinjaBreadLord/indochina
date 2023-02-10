@@ -1,100 +1,24 @@
 <html>
   <head>
-  <style>
-    body {
-        font-family: sans-serif;
-        padding: 20px;
-        background-color: lightblue;
-    }
-
-    h1 {
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 40px;
-    }
-
-    label {
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    input,
-    textarea,
-    select {
-        padding: 10px;
-        font-size: 16px;
-        margin-bottom: 20px;
-        width: 500px;
-    }
-
-    button[type="submit"] {
-        padding: 10px 20px;
-        background-color: darkblue;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    .center {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 45%;
-    }
-
-    h2 {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    li {
-        list-style: none;
-        margin-bottom: 20px;
-        font-size: 18px;
-    }
-  </style>
     <script>
-      function addReview() {
-        const reviewText = document.getElementById('review-text').value;
-        const reviewRecipe = document.getElementById('review-recipe').value;
-        const reviewAuthor = document.getElementById('review-author').value;
-        fetch('http://everittcheng.tk/reviews', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            text: reviewText,
-            recipe: reviewRecipe,
-            author: reviewAuthor
-          })
-        })
-        .then(response => response.json())
-        .then(data => {
-          console.log(data);
-        })
-        .catch(error => {
-          console.error(error);
-        });
+      function refreshReviews() {
+        fetch("https://everittcheng.tk/api/reviews")
+          .then(response => response.json())
+          .then(reviews => {
+            let reviewsList = document.getElementById("reviews-list");
+            reviewsList.innerHTML = "";
+            for (let review of reviews) {
+              let li = document.createElement("li");
+              li.innerHTML =
+                review.productId + " - " + review.text + " - " + review.rating;
+              reviewsList.appendChild(li);
+            }
+          });
       }
     </script>
   </head>
-  <body>
-    <h1>Add a Review</h1>
-    <p>
-      Write Review: <input type="text" id="review-text">
-    </p>
-    <p>
-      Recipe: <input type="text" id="review-recipe">
-    </p>
-    <p>
-      Author: <input type="text" id="review-author">
-    </p>
-    <button onclick="addReview()">Submit Review</button>
+  <body onload="refreshReviews()">
+    <h1>Reviews</h1>
+    <ul id="reviews-list"></ul>
   </body>
 </html>
