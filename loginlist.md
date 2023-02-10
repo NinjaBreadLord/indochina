@@ -16,14 +16,14 @@
 <script>
   const userz = document.getElementById("personlist");
 
-
-  const url = "https://everittcheng.tk/api/login/";
+  // const url = "http://localhost:8195/api/person/";
+  const url = "https://everittcheng.tk/api/person/";
 
   const options = {
       method: 'GET', 
       mode: 'cors', 
-      cache: 'default', 
-      credentials: 'omit', 
+      cache: 'no-cache', 
+      credentials: 'include', 
       headers: {
       'Content-Type': 'application/json'
       },
