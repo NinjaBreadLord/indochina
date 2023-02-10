@@ -6,4 +6,6 @@
   link: /reviews
 - name: Search
   link: /search
+- name: Verified Accounts
+  link: /loginlist
   
