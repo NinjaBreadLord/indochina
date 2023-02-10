@@ -87,7 +87,7 @@
   <body>
     <h1>Add a Review</h1>
     <p>
-      <textarea id="review-text"></textarea>
+      Write Review: <input type="text" id="review-text">
     </p>
     <p>
       Recipe: <input type="text" id="review-recipe">
