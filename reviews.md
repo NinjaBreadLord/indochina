@@ -61,6 +61,39 @@
       }
   </style>
     <title>Review Page</title>
+        <script>
+          function review(){
+            const form = document.getElementById('review-form');
+            const nameInput = document.getElementById('name');
+            const reviewInput = document.getElementById('review');
+            const reviewsContainer = document.getElementById('reviews');
+            const recipeInput = document.getElementById('recipe');
+            form.addEventListener('submit', (event) => {
+              event.preventDefault();
+              const name = nameInput.value;
+              const review = reviewInput.value;
+              const recipe = recipeInput.value;
+              const data = { name, recipe, review };
+              fetch('https://everittcheng.tk/api/reviews', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+              })
+                .then(response => response.json())
+                .then(data => {
+                  // Add the new review to the page
+                  const reviewElement = document.createElement('p');
+                  reviewElement.innerText = `${data.name}: ${data.review}`;
+                  reviewsContainer.appendChild(reviewElement);
+                })
+                .catch(error => {
+                  console.error('Error submitting review', error);
+                });
+            });
+          }
+    </script>
   </head>
   <body>
     <h1>Reviews</h1>
@@ -68,40 +101,9 @@
       <input type="text" id="name" placeholder="Name">
       <input type="text" id="recipe" placeholder="Recipe">
       <input type="text" id="review" placeholder="Review">
-      <button type="submit">Submit Review</button>
+      <button onclick="review()">Submit Review</button>
     </form>
     <div id="reviews">
     </div>
   </body>
-  <script>
-      const form = document.getElementById('review-form');
-      const nameInput = document.getElementById('name');
-      const reviewInput = document.getElementById('review');
-      const reviewsContainer = document.getElementById('reviews');
-      const recipeInput = document.getElementById('recipe');
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        const name = nameInput.value;
-        const review = reviewInput.value;
-        const recipe = recipeInput.value;
-        const data = { name, recipe, review };
-        fetch('https://everittcheng.tk/api/reviews', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(data)
-        })
-          .then(response => response.json())
-          .then(data => {
-            // Add the new review to the page
-            const reviewElement = document.createElement('p');
-            reviewElement.innerText = `${data.name}: ${data.review}`;
-            reviewsContainer.appendChild(reviewElement);
-          })
-          .catch(error => {
-            console.error('Error submitting review', error);
-          });
-      });
-</script>
 </html>
