@@ -14,8 +14,8 @@
 
 <script>
     // prepare URL's to allow easy switch from deployment and localhost
-    url = "https://everittcheng.tk"
-    //url = "http://localhost:8195"
+    // url = "https://everittcheng.tk"
+    url = "http://localhost:8195"
 
     const login_url = url + '/authenticate';
 
@@ -43,20 +43,26 @@
         fetch(login_url, requestOptions)
             .then(response => {
                 // trap error response from Web API
-                if (!response.ok) {
+              if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
                 console.log(errorMsg);
                 return;
-                }
-                // Success!!!
-                return response.json();
+                window.alert("incorrect login");
+              }
+              return response.text();
             })
-            .then(data => {
-                localStorage.setItem("jwt", data.jwt);
-            })
-            .catch(error => {
-                console.error("Error parsing JSON response: ", error);
-            });
+            window.alert("login successful");
+            // .then(data => {
+            //   try {
+            //     const jsonData = JSON.parse(data);
+            //     localStorage.setItem("jwt", jsonData.jwt);
+            //   } catch (e) {
+            //     console.error("Error parsing JSON response: ", e);
+            //   }
+            // })
+            // .catch(error => {
+            //   console.error("Error fetching data: ", error);
+            // });
     }
         // Redirect to Database location
         
