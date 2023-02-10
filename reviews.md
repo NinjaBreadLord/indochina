@@ -12,13 +12,6 @@
           margin-bottom: 40px;
       }
 
-      form {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-bottom: 40px;
-      }
-
       label {
           font-weight: bold;
           margin-bottom: 10px;
