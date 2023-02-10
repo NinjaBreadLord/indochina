@@ -101,7 +101,7 @@
       <input type="text" id="name" placeholder="Name">
       <input type="text" id="recipe" placeholder="Recipe">
       <input type="text" id="review" placeholder="Review">
-      <button onclick="review()">Submit Review</button>
+      <button type="submit" onclick="review()">Submit Review</button>
     </form>
     <div id="reviews">
     </div>
