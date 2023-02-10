@@ -13,20 +13,22 @@
 </form>
 
 <script>
-    // prepare URL's to allow easy switch from deployment and localhost
-    // url = "https://everittcheng.tk"
+    // URL for deployment
+    // var url = "https://spring.nighthawkcodingsociety.com"
+    // Comment out next line for local testing
     url = "http://localhost:8195"
-
+    // Authenticate endpoint
     const login_url = url + '/authenticate';
 
 
     function login_user(){
-        //Validate Password (must be 6-20 characters in len)
-        //verifyPassword("click");
+        // Set body to include login data
         const body = {
             email: document.getElementById("uid").value,
             password: document.getElementById("password").value,
         };
+
+        // Set Headers to support cross origin
         const requestOptions = {
             method: 'POST',
             mode: 'cors', // no-cors, *cors, same-origin
@@ -38,32 +40,22 @@
             },
         };
 
-        // URL for Create API
-        // Fetch API call to the database to create a new user
+        // Fetch JWT
         fetch(login_url, requestOptions)
             .then(response => {
                 // trap error response from Web API
-              if (!response.ok) {
+                if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
                 console.log(errorMsg);
                 return;
-                window.alert("incorrect login");
-              }
-              return response.text();
+                }
+                // Success!!!
+                return response.json();
             })
-            window.alert("login successful");
-            // .then(data => {
-            //   try {
-            //     const jsonData = JSON.parse(data);
-            //     localStorage.setItem("jwt", jsonData.jwt);
-            //   } catch (e) {
-            //     console.error("Error parsing JSON response: ", e);
-            //   }
-            // })
-            // .catch(error => {
-            //   console.error("Error fetching data: ", error);
-            // });
+            .then(data => {
+                localStorage.setItem("jwt", data.jwt);
+            })
+            .catch(error => {
+                console.error("Error parsing JSON response: ", error);
+            });
     }
-        // Redirect to Database location
-        
-</script>
