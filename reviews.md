@@ -85,7 +85,7 @@
         const review = reviewInput.value;
         const recipe = recipeInput.value;
         const data = { name, recipe, review };
-        fetch('https://everittcheng.tk/reviews', {
+        fetch('https://everittcheng.tk/api/reviews', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
