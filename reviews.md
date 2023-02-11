@@ -1,5 +1,51 @@
 <html>
   <head>
+  <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 1rem;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      label {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      input[type="text"],
+      textarea {
+        padding: 0.5rem;
+        font-size: 1rem;
+        width: 80%;
+        margin-bottom: 1rem;
+        border: 1px solid gray;
+        border-radius: 5px;
+      }
+      button[type="submit"] {
+        padding: 0.5rem 1rem;
+        background-color: lightblue;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      #review-list {
+        list-style: none;
+        padding: 0;
+        width: 80%;
+        margin: 0 auto;
+      }
+      #review-list li {
+        border-bottom: 1px solid gray;
+        padding: 0.5rem 0;
+      }
+    </style>
     <title>Product Review Page</title>
   </head>
   <body>
