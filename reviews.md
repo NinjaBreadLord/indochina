@@ -70,7 +70,7 @@
     reviewForm.addEventListener('submit', async (event) => {
       event.preventDefault();
       const name = document.querySelector('#name').value;
-      const review = document.querySelector('#review').value;
+      const review1 = document.querySelector('#review').value;
       const recipe = document.querySelector('#recipe').value;
       const response = await fetch('https://everittcheng.tk/api/reviews', {
         method: 'POST',
@@ -95,7 +95,7 @@
     }
     function addReview(review) {
       const li = document.createElement('li');
-      li.innerHTML = `${review.name}: ${review.recipe}: ${review.review}`;
+      li.innerHTML = `${review.name}: ${review.recipe}: ${review.review1}`;
       reviewList.appendChild(li);
     }
     getReviews();
