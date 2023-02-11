@@ -20,10 +20,6 @@
       }
       input[type="text"],
       textarea {
-        padding: 0.5rem;
-        font-size: 1rem;
-        width: 80%;
-        margin-bottom: 1rem;
         border: 1px solid gray;
         border-radius: 5px;
       }
