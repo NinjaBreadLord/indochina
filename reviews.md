@@ -3,7 +3,6 @@
     <style>
       body {
         font-family: sans-serif;
-        padding: 20px;
       }
       h1 {
         text-align: center;
