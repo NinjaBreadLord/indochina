@@ -2,7 +2,7 @@
 layout: page
 title: Recipes List
 ---
-<table id = "personlist">
+<table id = "recipeList">
     <thead>
       <tr>
         <th>ID</th>
@@ -15,10 +15,10 @@ title: Recipes List
 </table>
 
 <script>
-    const userz = document.getElementById("personlist");
+  const recipes = document.getElementById("recipeList");
 
 
-  const url = "https://everittcheng.tk/api/cookingwebsite/";
+  const url = "https://everittcheng.tk/api/recipes/all";
 
   const options = {
       method: 'GET', 
