@@ -28,7 +28,7 @@
 
       const url = "https://breadbops.gq/api/person/post?email=" + email +"&password=" + password + "&name=" + name + "&dob=" + dob;
       //Lowkey ion think this should be local host
-      fetch("http://localhost:8195/api/person/post/?" + urldata, {
+      fetch("https://everittcheng.tk/api/person/post/?" + urldata, {
         method: 'POST', 
         mode: 'cors', 
         cache: 'no-cache', 
