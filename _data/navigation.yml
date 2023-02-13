@@ -4,4 +4,8 @@
   link: /signup
 - name: Reviews
   link: /reviews
+- name: Search
+  link: /search
+- name: Verified Accounts
+  link: /loginlist
   

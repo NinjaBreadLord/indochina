@@ -14,13 +14,15 @@
 
 <script>
     // prepare URL's to allow easy switch from deployment and localhost
-    // var url = "https://everittcheng.tk"
-    url = "http://localhost:8195"
+    url = "https://everittcheng.tk"
+    //url = "http://localhost:8195"
 
     const login_url = url + '/authenticate';
 
 
     function login_user(){
+        const email1 = document.getElementById("uid").value;
+        const password1 = document.getElementById("password").value;
         //Validate Password (must be 6-20 characters in len)
         //verifyPassword("click");
         const body = {
@@ -41,21 +43,30 @@
         // URL for Create API
         // Fetch API call to the database to create a new user
         fetch(login_url, requestOptions)
-        .then(response => {
-            // trap error response from Web API
-            if (!response.ok) {
+            .then(response => {
+                // trap error response from Web API
+              if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
                 console.log(errorMsg);
-                return Promise.reject(errorMsg);
-            }
-            return response.json();
-        })
-        .then(data => {
-            localStorage.setItem("token", data.token);
-            window.alert(data.token);
-        })
-        .catch(error => {
-            console.error(error);
-        });
+                return;
+                window.alert("incorrect login");
+              }
+              return response.text();
+            })
+            window.alert("successfully logged in");
+            sessionStorage.setItem("email", email1);
+            // .then(data => {
+            //   try {
+            //     const jsonData = JSON.parse(data);
+            //     localStorage.setItem("jwt", jsonData.jwt);
+            //   } catch (e) {
+            //     console.error("Error parsing JSON response: ", e);
+            //   }
+            // })
+            // .catch(error => {
+            //   console.error("Error fetching data: ", error);
+            // });
     }
+        // Redirect to Database location
+        
 </script>

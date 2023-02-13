@@ -1,73 +1,61 @@
 <html>
   <head>
-    <title>Review Page</title>
-  </head>
-  <style>
-    body {
+    <style>
+      body {
         font-family: sans-serif;
-        padding: 20px;
-    }
-
-    h1 {
+      }
+      h1 {
         text-align: center;
         margin-bottom: 40px;
-    }
-
-    form {
+      }
+      form {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 40px;
-    }
-
-    label {
+      }
+      label {
         font-weight: bold;
         margin-bottom: 10px;
-    }
-
-    input,
-    textarea,
-    select {
+      }
+      input,
+      textarea,
+      select {
         padding: 10px;
         font-size: 16px;
         margin-bottom: 20px;
         width: 500px;
-    }
-
-    button[type="submit"] {
+      }
+      button[type="submit"] {
         padding: 10px 20px;
         background-color: lightblue;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-    }
-
-    img {
-        margin-left: auto;
-        margin-right: auto;
-        border: black;
-    }
-
-    h2 {
+      }
+      h2 {
         text-align: center;
         margin-bottom: 20px;
-    }
-
-    li {
+      }
+      li {
         list-style: none;
         margin-bottom: 20px;
         font-size: 18px;
-    }
-  </style>
+      }
+      </style>
+    <title>Review Page</title>
+  </head>
   <body>
-    <h1>Recipe Reviews</h1>
-    <img src="images/review.png">
-
+    <h1>Recipe Review</h1>
     <form id="review-form">
       <div>
         <label for="name">Name:</label>
         <input type="text" id="name" required>
+      </div>
+      <div>
+        <label for="recipe">Recipe:</label>
+        <input type="text" id="recipe" required>
       </div>
       <div>
         <label for="review">Review:</label>
@@ -86,30 +74,23 @@
       </div>
       <button type="submit">Submit Review</button>
     </form>
-
     <h2>Reviews</h2>
     <ul id="reviews-list">
-      <!-- Reviews will be inserted here -->
     </ul>
-
     <script>
       const form = document.getElementById("review-form");
       const reviewsList = document.getElementById("reviews-list");
-
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-
         const name = document.getElementById("name").value;
         const review = document.getElementById("review").value;
         const rating = document.getElementById("rating").value;
-
+        const recipe = document.getElementById("recipe").value;
         const li = document.createElement("li");
-        li.innerHTML = `${name} gave a rating of ${rating} stars: "${review}"`;
+        li.innerHTML = `${name} gave ${recipe} a rating of ${rating} stars: <br> "${review}"`;
         reviewsList.appendChild(li);
-
         form.reset();
       });
     </script>
   </body>
 </html>
-
