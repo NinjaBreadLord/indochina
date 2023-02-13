@@ -16,8 +16,8 @@
 <script>
   const userz = document.getElementById("personlist");
 
-  // const url = "http://localhost:8195/api/person/";
-  const url = "https://everittcheng.tk/api/person/";
+  const url = "http://localhost:8195/api/person/";
+  // const url = "https://everittcheng.tk/api/person/";
 
   const options = {
       method: 'GET', 

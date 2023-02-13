@@ -14,8 +14,8 @@
 
 <script>
     // prepare URL's to allow easy switch from deployment and localhost
-    url = "https://everittcheng.tk"
-    //url = "http://localhost:8195"
+    // url = "https://everittcheng.tk"
+    url = "http://localhost:8195"
 
     const login_url = url + '/authenticate';
 
@@ -54,7 +54,7 @@
               return response.text();
             })
             window.alert("successfully logged in");
-            localStorage.setItem("email", email1);
+            sessionStorage.setItem("email", email1);
             // .then(data => {
             //   try {
             //     const jsonData = JSON.parse(data);
