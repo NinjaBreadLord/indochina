@@ -7,7 +7,7 @@
 <img src="images/daWorld.png" usemap="#image-map">
 
 <map name="image-map">
-    <area target="_self" alt="The Americas" title="The Americas" href="https://www.britannica.com/place/Americas" coords="-1,56,692,1081" shape="rect">
+    <area target="_self" alt="The Americas" title="The Americas" href="https://www.britannica.com/place/Americas" coords="-1,56,300,1081" shape="rect">
     <area target="_self" alt="Oceania" title="Oceania" href="https://www.cia.gov/the-world-factbook/australia-and-oceania/" coords="1860,855,180" shape="circle">
     <area target="_self" alt="Sub-Saharan Africa" title="Sub-Saharan Africa" href="https://www.cia.gov/the-world-factbook/africa/" coords="1011,724,259" shape="circle">
     <area target="_self" alt="Europe" title="Europe" href="https://www.cia.gov/the-world-factbook/europe/" coords="783,143,1167,296" shape="rect">
