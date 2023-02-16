@@ -47,7 +47,7 @@ input[type=submit]:hover {
       <option value="Europe">Europe</option>
       <option value="Oceania">Oceania</option>
     </select>
-    <label for="preparation">Preparation Time:</label>
+    <label for="preparation">Preparation Time(Just Enter # of Minutes):</label>
     <input type="text" id="preparation" name="preparation" required>
   <button type="submit">Create Recipe</button>
 </form>
