@@ -82,6 +82,23 @@
       const reviewsList = document.getElementById("reviews-list");
       form.addEventListener("submit", (event) => {
         event.preventDefault();
+        fetch('everittcheng.tk/api/reviews', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(form)
+        })
+        .then (response => {
+          if (response.ok) {
+            window.location.reload();
+          } else {
+            console.error('Error sending review data');
+          }
+        }) 
+        .catch(error => {
+          console.error('Error sending review data:', error);
+        });
         const name = document.getElementById("name").value;
         const review = document.getElementById("review").value;
         const rating = document.getElementById("rating").value;
