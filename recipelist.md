@@ -8,7 +8,7 @@
         <th>name</th>
         <th>ingredients</th>
         <th>description</th>
-        <th>country</th>
+        <th>region</th>
         <th>preparation</th>
       </tr>
     </thead>
@@ -62,14 +62,14 @@
               const name = document.createElement("td");
               const ingredients = document.createElement("td");
               const description = document.createElement("td");
-              const country = document.createElement("td");
+              const region = document.createElement("td");
               const preparation = document.createElement("td");
 
 
               name.innerHTML = row.name;
               ingredients.innerHTML = row.ingredients;
               description.innerHTML = row.description;
-              country.innerHTML = row.country;
+              region.innerHTML = row.region;
               preparation.innerHTML = row.preparation;
 
 
@@ -77,7 +77,7 @@
               tr.appendChild(name);
               tr.appendChild(ingredients);
               tr.appendChild(description);
-              tr.appendChild(country);
+              tr.appendChild(region);
               tr.appendChild(preparation);
 
 

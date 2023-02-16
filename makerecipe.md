@@ -41,8 +41,6 @@ input[type=submit]:hover {
     <input type="text" id="region" name="region" required>
     <label for="preparation">Preparation Time:</label>
     <input type="text" id="preparation" name="preparation" required>
-    <label for="vegetarian">Vegetarian:</label>
-    <input type="text" id="vegetarian" name="vegetarian" required>
   <button type="submit">Create Recipe</button>
 </form>
 
