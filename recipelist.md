@@ -1,30 +1,40 @@
----
-layout: page
-title: Recipes List
----
-<table id = "recipeList">
+{% include home.html %}
+
+<h1 style = "text-align: center">Logins List</h1>
+
+<table id = "personlist">
     <thead>
       <tr>
-        <th>ID</th>
-        <th>Recipes</th>
-        <th>Ingredients</th>
-        <th>Description</th>
+        <th>name</th>
+        <th>ingredients</th>
+        <th>description</th>
+        <th>country</th>
+        <th>preparation</th>
       </tr>
     </thead>
     <tbody></tbody>
 </table>
 
 <script>
-  const recipes = document.getElementById("recipeList");
+//   function checkJwtCookie() {
+//     if (document.cookie.indexOf("jwt=") === -1) {
+//       // JWT cookie is missing, redirect user to login page
+//       window.location.href = "/indochina/";
+//     }
+//   }
 
+// // Call checkJwtCookie() when page loads
+//   checkJwtCookie();
+  const userz = document.getElementById("personlist");
 
-  const url = "https://everittcheng.tk/api/recipes/all";
+  const url = "http://localhost:8195/api/recipes/all";
+  // const url = "https://everittcheng.tk/api/person/";
 
   const options = {
       method: 'GET', 
       mode: 'cors', 
-      cache: 'default', 
-      credentials: 'omit', 
+      cache: 'no-cache', 
+      credentials: 'include', 
       headers: {
       'Content-Type': 'application/json'
       },
@@ -49,24 +59,26 @@ title: Recipes List
 
               const tr = document.createElement("tr");
 
-              const id = document.createElement("td");
-              const recipe = document.createElement("td");
+              const name = document.createElement("td");
               const ingredients = document.createElement("td");
               const description = document.createElement("td");
+              const country = document.createElement("td");
+              const preparation = document.createElement("td");
 
 
-
-              id.innerHTML = row.id;
-              recipe.innerHTML = row.recipe;
+              name.innerHTML = row.name;
               ingredients.innerHTML = row.ingredients;
               description.innerHTML = row.description;
+              country.innerHTML = row.country;
+              preparation.innerHTML = row.preparation;
 
 
 
-              tr.appendChild(id);
-              tr.appendChild(recipe);
+              tr.appendChild(name);
               tr.appendChild(ingredients);
               tr.appendChild(description);
+              tr.appendChild(country);
+              tr.appendChild(preparation);
 
 
 
@@ -78,3 +90,11 @@ title: Recipes List
 
   showList();
 </script>
+
+
+
+
+
+
+
+

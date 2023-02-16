@@ -8,4 +8,5 @@
   link: /search
 - name: Verified Accounts
   link: /loginlist
-  
+- name: Recipes
+  link: /recipes

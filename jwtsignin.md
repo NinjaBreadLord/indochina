@@ -13,9 +13,15 @@
 </form>
 
 <script>
+    function check(){
+      if (document.cookie.indexOf("jwt") >= 0) {
+        window.location.href = "/indochina/";
+      }
+    }
+    check();
     // prepare URL's to allow easy switch from deployment and localhost
-    url = "https://everittcheng.tk"
-    //url = "http://localhost:8195"
+    // url = "https://everittcheng.tk"
+    url = "http://localhost:8195"
 
     const login_url = url + '/authenticate';
 
@@ -52,8 +58,9 @@
                 window.alert("incorrect login");
               }
               return response.text();
+              window.alert("successfully logged in");
             })
-            window.alert("successfully logged in");
+
             localStorage.setItem("email", email1);
             // .then(data => {
             //   try {
