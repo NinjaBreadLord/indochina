@@ -38,12 +38,16 @@ input[type=submit]:hover {
     <label for="description">Description:</label>
     <input type="text" id="description" name="description" style="height:300px" required>
     <label for="region">Region:</label>
-    <input type="text" id="region" name="region" required>
+    <select id="region" name="region">
+      <option value="Americas">Americas</option>
+      <option value="Asia">Asia</option>
+      <option value="Africas">Africas</option>
+      <option value="Europe">Europe</option>
+      <option value="Oceania">Oceania</option>
+    </select>
     <label for="preparation">Preparation Time:</label>
     <input type="text" id="preparation" name="preparation" required>
-    <label for="vegetarian">Vegetarian:</label>
-    <input type="text" id="vegetarian" name="vegetarian" required>
-  <button type="submit">Create Recipe</button>
+    <button type="submit">Create Recipe</button>
 </form>
 
 
