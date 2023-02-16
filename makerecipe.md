@@ -1,20 +1,49 @@
  {% include home.html %}
+
+<style>
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+</style>
+
  <h1 style = "text-align: center">Create Recipe</h1>
 
 <form id="createrecipe">
-    <label for="name">Name:</label>
-    <input type="name" id="name" name="name" required>
+    <label for="name">Name of Recipe:</label>
+    <input type="text" id="name" name="name" required>
     <label for="ingredients">Ingredients:</label>
-    <input type="ingredients" id="ingredients" name="ingredients" required>
+    <input type="text" id="ingredients" name="ingredients" required>
     <label for="description">Description:</label>
-    <input type="description" id="description" name="description" required>
-    <label for="country">Country:</label>
-    <input type="country" id="country" name="country" required>
-    <label for="description">Description:</label>
-    <input type="description" id="description" name="description" required>
-
-  
-  <button type="submit">Create Account</button>
+    <input type="text" id="description" name="description" style="height:300px" required>
+    <label for="region">Region:</label>
+    <input type="text" id="region" name="region" required>
+    <label for="preparation">Preparation Time:</label>
+    <input type="text" id="preparation" name="preparation" required>
+    <label for="vegetarian">Vegetarian:</label>
+    <input type="text" id="vegetarian" name="vegetarian" required>
+  <button type="submit">Create Recipe</button>
 </form>
 
 

@@ -10,3 +10,5 @@
   link: /loginlist
 - name: Recipes
   link: /recipes
+- name: Login
+  link: /jwtsignin
