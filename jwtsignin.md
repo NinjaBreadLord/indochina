@@ -5,7 +5,7 @@
     </label></p>
     <p><label>
         Password:
-        <input type="password" name="password" id="password" required="" />
+        <input type="text" name="password" id="password" required="" />
     </label></p>
     <p>
         <button>Login</button>

@@ -65,7 +65,7 @@ input[type=submit]:hover {
 
 
       //Lowkey ion think this should be local host
-      fetch("http://localhost:8195/api/recipes/post/?" + urldata, {
+      fetch("https://everittcheng.tk/api/recipes/post/?" + urldata, {
         method: 'POST', 
         mode: 'cors', 
         cache: 'no-cache', 

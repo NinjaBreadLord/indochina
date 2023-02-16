@@ -1,6 +1,6 @@
 {% include home.html %}
 
-<h1 style = "text-align: center">Search by Country</h1>
+<h1 style = "text-align: center">Search by Region</h1>
 
 
 
@@ -13,11 +13,11 @@
 <table id = "personlist">
     <thead>
       <tr>
-        <th>name</th>
-        <th>ingredients</th>
-        <th>description</th>
-        <th>country</th>
-        <th>preparation</th>
+        <th>Name</th>
+        <th>Ingredients</th>
+        <th>Description</th>
+        <th>Region</th>
+        <th>Preparation Time</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -34,7 +34,7 @@
 // // Call checkJwtCookie() when page loads
 //   checkJwtCookie();
   const userz = document.getElementById("personlist");
-  const country1 = document.getElementById("country");
+  
   const url = "http://localhost:8195/api/recipes/all";
   // const url = "https://everittcheng.tk/api/person/";
 
@@ -50,6 +50,7 @@
 
 
   function showList() {
+    const country1 = document.getElementById("country").value;
     fetch(url, options)
       .then(response => {
         if (response.status !== 200) {
@@ -64,20 +65,20 @@
         }
         response.json().then(data => {
             for (const row of data) {
-                if(row.country == country1) {
+                if(row.region == country1) {
                     const tr = document.createElement("tr");
 
                     const name = document.createElement("td");
                     const ingredients = document.createElement("td");
                     const description = document.createElement("td");
-                    const country = document.createElement("td");
+                    const region = document.createElement("td");
                     const preparation = document.createElement("td");
 
 
                     name.innerHTML = row.name;
                     ingredients.innerHTML = row.ingredients;
                     description.innerHTML = row.description;
-                    country.innerHTML = row.country;
+                    region.innerHTML = row.region;
                     preparation.innerHTML = row.preparation;
 
 
@@ -85,7 +86,7 @@
                     tr.appendChild(name);
                     tr.appendChild(ingredients);
                     tr.appendChild(description);
-                    tr.appendChild(country);
+                    tr.appendChild(region);
                     tr.appendChild(preparation);
 
 
@@ -93,13 +94,16 @@
                     userz.appendChild(tr);
 
                 }
+                else {
+                    window.alert("There are no recipes in this region");
+                }
 
             }
         })
     })
   }
 
-  showList();
+
 </script>
 
 
