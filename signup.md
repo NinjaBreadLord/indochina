@@ -26,9 +26,9 @@
       const data = new FormData(event.target);
       const urldata = new URLSearchParams(data).toString();
 
-      const url = "https://breadbops.gq/api/person/post?email=" + email +"&password=" + password + "&name=" + name + "&dob=" + dob;
+
       //Lowkey ion think this should be local host
-      fetch("https://everittcheng.tk/api/person/post/?" + urldata, {
+      fetch("http://localhost:8195/api/person/post/?" + urldata, {
         method: 'POST', 
         mode: 'cors', 
         cache: 'no-cache', 
@@ -37,7 +37,7 @@
           "Content-Type": "application/json"
         }
       })
-      window.alert(urldata);
+      window.alert("account created successfully");
   }
 
   const make = document.getElementById("createuser");

@@ -5,9 +5,11 @@
 <table id = "personlist">
     <thead>
       <tr>
-        <th>id</th>
-        <th>email</th>
-        <th>password</th>
+        <th>name</th>
+        <th>ingredients</th>
+        <th>description</th>
+        <th>country</th>
+        <th>preparation</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -25,7 +27,7 @@
 //   checkJwtCookie();
   const userz = document.getElementById("personlist");
 
-  const url = "http://localhost:8195/api/person/";
+  const url = "http://localhost:8195/api/recipes/all";
   // const url = "https://everittcheng.tk/api/person/";
 
   const options = {
@@ -57,20 +59,26 @@
 
               const tr = document.createElement("tr");
 
-              const id = document.createElement("td");
-              const email = document.createElement("td");
-              const password = document.createElement("td");
+              const name = document.createElement("td");
+              const ingredients = document.createElement("td");
+              const description = document.createElement("td");
+              const country = document.createElement("td");
+              const preparation = document.createElement("td");
 
 
-              id.innerHTML = row.id;
-              email.innerHTML = row.email;
-              password.innerHTML = row.password;
+              name.innerHTML = row.name;
+              ingredients.innerHTML = row.ingredients;
+              description.innerHTML = row.description;
+              country.innerHTML = row.country;
+              preparation.innerHTML = row.preparation;
 
 
 
-              tr.appendChild(id);
-              tr.appendChild(email);
-              tr.appendChild(password);
+              tr.appendChild(name);
+              tr.appendChild(ingredients);
+              tr.appendChild(description);
+              tr.appendChild(country);
+              tr.appendChild(preparation);
 
 
 
