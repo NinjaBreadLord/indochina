@@ -39,16 +39,16 @@ input[type=submit]:hover {
     <input type="text" id="description" name="description" style="height:300px" required>
     <label for="region">Region:</label>
     <select id="region" name="region">
-      <option value="Americas">Americas</option>
-      <option value="Asia">Asia</option>
-      <option value="Africas">Africas</option>
+      <option value="TheAmericas">Americas</option>
+      <option value="EastandSoutheastAsia">East and Southeast Asia</option>
+      <option value="SubsaharanAfrica">Africas</option>
+      <option value="South Asia">South Asia</option>
+      <option value="MiddleEast,NorthAfrica,CentralAsia">Middle East, North Africa, Central Asia</option>
       <option value="Europe">Europe</option>
       <option value="Oceania">Oceania</option>
     </select>
     <label for="preparation">Preparation Time:</label>
     <input type="text" id="preparation" name="preparation" required>
-    <label for="vegetarian">Vegetarian:</label>
-    <input type="text" id="vegetarian" name="vegetarian" required>
   <button type="submit">Create Recipe</button>
 </form>
 
