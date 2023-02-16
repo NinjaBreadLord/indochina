@@ -4,7 +4,7 @@
 <h2>Map of the World</h2>
 <p>Click on the map to see the recipes!:</p>
 
-<img src="daWorld.png" usemap="#image-map">
+<img src="images/daWorld.png" usemap="#image-map">
 
 <map name="image-map">
     <area target="_self" alt="The Americas" title="The Americas" href="https://www.britannica.com/place/Americas" coords="-1,56,692,1081" shape="rect">
