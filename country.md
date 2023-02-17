@@ -94,9 +94,6 @@
                     userz.appendChild(tr);
 
                 }
-                else {
-                    window.alert("There are no recipes in this region");
-                }
 
             }
         })
