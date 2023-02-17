@@ -1,15 +1,15 @@
 {% include home.html %}
 
-<h1 style = "text-align: center">Logins List</h1>
+<h1 style = "text-align: center">Recipes List</h1>
 
 <table id = "personlist">
     <thead>
       <tr>
-        <th>name</th>
-        <th>ingredients</th>
-        <th>description</th>
-        <th>country</th>
-        <th>preparation</th>
+        <th style = "width: 100px;">Name</th>
+        <th style = "width: 100px;">Region</th>
+        <th style = "width: 50px;">Prep Time</th>
+        <th style = "width: 200px;">Ingredients</th>
+        <th style = "width: 400px;">Description</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -27,8 +27,8 @@
 //   checkJwtCookie();
   const userz = document.getElementById("personlist");
 
-  const url = "http://localhost:8195/api/recipes/all";
-  // const url = "https://everittcheng.tk/api/person/";
+  const url = "https://everittcheng.tk/api/recipes/all";
+  // const url = "http://localhost:8195/api/recipes/all";
 
   const options = {
       method: 'GET', 
@@ -62,23 +62,23 @@
               const name = document.createElement("td");
               const ingredients = document.createElement("td");
               const description = document.createElement("td");
-              const country = document.createElement("td");
+              const region = document.createElement("td");
               const preparation = document.createElement("td");
 
 
               name.innerHTML = row.name;
               ingredients.innerHTML = row.ingredients;
               description.innerHTML = row.description;
-              country.innerHTML = row.country;
+              region.innerHTML = row.region;
               preparation.innerHTML = row.preparation;
 
 
 
               tr.appendChild(name);
+              tr.appendChild(region);
+              tr.appendChild(preparation);
               tr.appendChild(ingredients);
               tr.appendChild(description);
-              tr.appendChild(country);
-              tr.appendChild(preparation);
 
 
 

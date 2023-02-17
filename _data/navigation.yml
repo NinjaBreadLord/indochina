@@ -1,7 +1,5 @@
 - name: Map
   link: /Map
-- name: Sign Up
-  link: /signup
 - name: Reviews
   link: /reviews
 - name: Search
@@ -9,4 +7,13 @@
 - name: Verified Accounts
   link: /loginlist
 - name: Recipes
-  link: /recipes
+  link: /recipelist
+- name: Search by Region
+  link: /country
+- name: Make Recipe
+  link: /makerecipe
+- name: Login
+  link: /jwtsignin
+- name: Sign Up
+  link: /signup
+

@@ -1,23 +1,15 @@
 {% include home.html %}
 
-<h1 style = "text-align: center">Search by Region</h1>
-
-
-
-  <form action="javascript:showList()">
-    <label for = "country" class = "label-1">Country:</label><br>
-    <input type = "text" id = "country" name = "country" class = "country"><br>
-    <input value="Submit" type="submit" class="button"/>
-  <form>
+<h1 style = "text-align: center">Recipes List</h1>
 
 <table id = "personlist">
     <thead>
       <tr>
-        <th>Name</th>
-        <th>Ingredients</th>
-        <th>Description</th>
-        <th>Region</th>
-        <th>Preparation Time</th>
+        <th style = "width: 100px;">Name</th>
+        <th style = "width: 100px;">Region</th>
+        <th style = "width: 50px;">Prep Time</th>
+        <th style = "width: 200px;">Ingredients</th>
+        <th style = "width: 400px;">Description</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -34,9 +26,9 @@
 // // Call checkJwtCookie() when page loads
 //   checkJwtCookie();
   const userz = document.getElementById("personlist");
-  
-  const url = "https://everittcheng.tk/api/recipes/all";
-  // const url = "http://localhost:8195/api/recipes/all";
+
+  // const url = "https://everittcheng.tk/api/recipes/all";
+  const url = "http://localhost:8195/api/recipes/all";
 
   const options = {
       method: 'GET', 
@@ -50,7 +42,6 @@
 
 
   function showList() {
-    const country1 = document.getElementById("country").value;
     fetch(url, options)
       .then(response => {
         if (response.status !== 200) {
@@ -65,7 +56,7 @@
         }
         response.json().then(data => {
             for (const row of data) {
-                if(row.region == country1) {
+                if(row.region=="East and Southeast Asia"){
                     const tr = document.createElement("tr");
 
                     const name = document.createElement("td");
@@ -84,10 +75,10 @@
 
 
                     tr.appendChild(name);
-                    tr.appendChild(ingredients);
-                    tr.appendChild(description);
                     tr.appendChild(region);
                     tr.appendChild(preparation);
+                    tr.appendChild(ingredients);
+                    tr.appendChild(description);
 
 
 
@@ -100,7 +91,7 @@
     })
   }
 
-
+  showList();
 </script>
 
 
