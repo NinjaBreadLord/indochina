@@ -81,5 +81,7 @@ input[type=submit]:hover {
   const make = document.getElementById("createrecipe");
   make.addEventListener("submit", inputper);
 
+  location.reload();
+
 
 </script>
