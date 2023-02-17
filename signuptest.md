@@ -16,8 +16,8 @@ function signup() {
 
 
 
-    //const url = "https://everittcheng.tk/api/login/";
-    const url = "http://localhost:8195/api/login/"
+    const url = "https://everittcheng.tk/api/login/";
+    // const url = "http://localhost:8195/api/login/"
 
     const options = {
         method: 'GET', 
