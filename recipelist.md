@@ -5,11 +5,11 @@
 <table id = "personlist">
     <thead>
       <tr>
-        <th style = "width: 10px;">Name</th>
-        <th>Ingredients</th>
-        <th>Region</th>
-        <th>Prep Time</th>
-        <th>Description</th>
+        <th style = "width: 100px;">Name</th>
+        <th style = "width: 100px;">Region</th>
+        <th style = "width: 50px;">Prep Time</th>
+        <th style = "width: 200px;">Ingredients</th>
+        <th style = "width: 400px;">Description</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -75,9 +75,9 @@
 
 
               tr.appendChild(name);
-              tr.appendChild(ingredients);
               tr.appendChild(region);
               tr.appendChild(preparation);
+              tr.appendChild(ingredients);
               tr.appendChild(description);
 
 
