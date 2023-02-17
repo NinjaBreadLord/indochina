@@ -82,12 +82,14 @@
       const reviewsList = document.getElementById("reviews-list");
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-        fetch('everittcheng.tk/api/reviews', {
+        //const url = 'everittcheng.tk/api/reviews';
+        const url = 'localhost:8195/api/reviews';
+        fetch(url, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
-          body: JSON.stringify(reviews-list)
+          body: JSON.stringify(reviews-list);
         })
         .then (response => {
           if (response.ok) {
