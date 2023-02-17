@@ -36,7 +36,8 @@ input[type=submit]:hover {
     <label for="ingredients">Ingredients:</label>
     <input type="text" id="ingredients" name="ingredients" required>
     <label for="description">Description:</label>
-    <input type="text" id="description" name="description" style="height:300px" required>
+    <textarea id="description" name="description" rows="20" cols="100">
+    </textarea>
     <label for="region">Region:</label>
     <select id="region" name="region">
       <option value="The Americas">Americas</option>
