@@ -36,7 +36,7 @@
   const userz = document.getElementById("personlist");
   
   const url = "https://everittcheng.tk/api/recipes/all";
-  // const url = "https://everittcheng.tk/api/person/";
+  // const url = "http://localhost:8195/api/recipes/all";
 
   const options = {
       method: 'GET', 

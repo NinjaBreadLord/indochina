@@ -64,9 +64,10 @@ input[type=submit]:hover {
       const data = new FormData(event.target);
       const urldata = new URLSearchParams(data).toString();
 
-
+      const url = "https://everittcheng.tk/api/recipes/post/?"
+      // const url = "http://localhost:8195/api/recipes/post/?"
       //Lowkey ion think this should be local host
-      fetch("https://everittcheng.tk/api/recipes/post/?" + urldata, {
+      fetch(url + urldata, {
         method: 'POST', 
         mode: 'cors', 
         cache: 'no-cache', 

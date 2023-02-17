@@ -98,9 +98,10 @@
       const data = new FormData(event.target);
       const urldata = new URLSearchParams(data).toString();
 
-
+      const url = "https://everittcheng.tk/api/person/post/?"
+      // const url = "localhost:8195/api/person/post/?"  
       //Lowkey ion think this should be local host
-      fetch("https://everittcheng.tk/api/person/post/?" + urldata, {
+      fetch(url + urldata, {
         method: 'POST', 
         mode: 'cors', 
         cache: 'no-cache', 

@@ -56,7 +56,7 @@
         }
         response.json().then(data => {
             for (const row of data) {
-                if(row.region=="TheAmericas"){
+                if(row.region=="The Americas"){
                     const tr = document.createElement("tr");
 
                     const name = document.createElement("td");
