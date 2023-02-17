@@ -82,25 +82,6 @@
       const reviewsList = document.getElementById("reviews-list");
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-        const url = 'everittcheng.tk/api/reviews';
-        //const url = 'localhost:8195/api/reviews';
-        fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(reviews-list);
-        })
-        .then (response => {
-          if (response.ok) {
-            window.location.reload();
-          } else {
-            console.error('Error sending review data');
-          }
-        }) 
-        .catch(error => {
-          console.error('Error sending review data:', error);
-        });
         const name = document.getElementById("name").value;
         const review = document.getElementById("review").value;
         const rating = document.getElementById("rating").value;
@@ -108,7 +89,6 @@
         const li = document.createElement("li");
         li.innerHTML = `${name} gave ${recipe} a rating of ${rating} stars: <br> "${review}"`;
         reviewsList.appendChild(li);
-        form.reset();
       });
     </script>
   </body>
