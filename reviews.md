@@ -82,8 +82,8 @@
       const reviewsList = document.getElementById("reviews-list");
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-        //const url = 'everittcheng.tk/api/reviews';
-        const url = 'localhost:8195/api/reviews';
+        const url = 'everittcheng.tk/api/reviews';
+        //const url = 'localhost:8195/api/reviews';
         fetch(url, {
           method: 'POST',
           headers: {
