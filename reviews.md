@@ -78,12 +78,12 @@
     <ul id="reviews-list">
     </ul>
     <script>
-      const form = document.getElementById("review-form");
+      const form = document.getElementById("review-form");\
+      const url = 'localhost:8195/api/reviews';
+    //const url = 'everittcheng.tk/api/reviews';
       const reviewsList = document.getElementById("reviews-list");
       form.addEventListener("submit", (event) => {
         event.preventDefault();
-        const url = 'localhost:8195/api/reviews';
-        //const url = 'everittcheng.tk/api/reviews';
         fetch(url), {
           method: 'POST',
           headers: {
