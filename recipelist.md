@@ -5,11 +5,11 @@
 <table id = "personlist">
     <thead>
       <tr>
-        <th>Name</th>
+        <th style = "width: 10px;">Name</th>
         <th>Ingredients</th>
-        <th>Description</th>
         <th>Region</th>
         <th>Prep Time</th>
+        <th>Description</th>
       </tr>
     </thead>
     <tbody></tbody>
@@ -27,8 +27,8 @@
 //   checkJwtCookie();
   const userz = document.getElementById("personlist");
 
-  const url = "https://everittcheng.tk/api/recipes/all";
-  // const url = "https://everittcheng.tk/api/person/";
+  // const url = "https://everittcheng.tk/api/recipes/all";
+  const url = "http://localhost:8195/api/recipes/all";
 
   const options = {
       method: 'GET', 
@@ -76,9 +76,9 @@
 
               tr.appendChild(name);
               tr.appendChild(ingredients);
-              tr.appendChild(description);
               tr.appendChild(region);
               tr.appendChild(preparation);
+              tr.appendChild(description);
 
 
 

@@ -39,11 +39,11 @@ input[type=submit]:hover {
     <input type="text" id="description" name="description" style="height:300px" required>
     <label for="region">Region:</label>
     <select id="region" name="region">
-      <option value="TheAmericas">Americas</option>
-      <option value="EastandSoutheastAsia">East and Southeast Asia</option>
-      <option value="SubsaharanAfrica">Africas</option>
+      <option value="The Americas">Americas</option>
+      <option value="East and Southeast Asia">East and Southeast Asia</option>
+      <option value="Subsaharan Africa">Africas</option>
       <option value="South Asia">South Asia</option>
-      <option value="MiddleEast,NorthAfrica,CentralAsia">Middle East, North Africa, Central Asia</option>
+      <option value="MiddleEast, North Africa, Central Asia">Middle East, North Africa, Central Asia</option>
       <option value="Europe">Europe</option>
       <option value="Oceania">Oceania</option>
     </select>
