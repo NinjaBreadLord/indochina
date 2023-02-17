@@ -8,9 +8,12 @@
   link: /loginlist
 - name: Recipes
   link: /recipelist
+- name: Search by Region
+  link: /country
+- name: Make Recipe
+  link: /makerecipe
 - name: Login
   link: /jwtsignin
 - name: Sign Up
   link: /signup
-- name: Search by Region
-  link: /country
+

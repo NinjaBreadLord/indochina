@@ -1,15 +1,15 @@
 {% include home.html %}
 
-<h1 style = "text-align: center">Logins List</h1>
+<h1 style = "text-align: center">Recipes List</h1>
 
 <table id = "personlist">
     <thead>
       <tr>
-        <th>name</th>
-        <th>ingredients</th>
-        <th>description</th>
-        <th>region</th>
-        <th>preparation</th>
+        <th>Name</th>
+        <th>Ingredients</th>
+        <th>Description</th>
+        <th>Region</th>
+        <th>Prep Time</th>
       </tr>
     </thead>
     <tbody></tbody>
