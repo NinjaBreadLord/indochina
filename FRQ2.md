@@ -57,7 +57,7 @@
   const userz = document.getElementById("personlist");
 
 
-  const url = "https://everittcheng.tk/api/login/";
+  const url = "http://everittcheng.tk/api/login/";
 
   const options = {
       method: 'GET', 

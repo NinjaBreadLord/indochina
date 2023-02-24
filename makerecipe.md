@@ -58,29 +58,55 @@ input[type=submit]:hover {
 
 <script>
 
+
+
   function inputper(event) {
+
       event.preventDefault();
 
       const data = new FormData(event.target);
       const urldata = new URLSearchParams(data).toString();
 
-      const url = "https://everittcheng.tk/api/recipes/post/?"
-      // const url = "http://localhost:8195/api/recipes/post/?"
+      // const url = "https://everittcheng.tk/api/recipes/post/?"
+      // const geturl = "https:everittcheng.tk/api/recipes/all"
+      const url = "http://localhost:8195/api/recipes/post/?"
+
       //Lowkey ion think this should be local host
-      fetch(url + urldata, {
+
+    fetch(url + urldata, {
         method: 'POST', 
         mode: 'cors', 
         cache: 'no-cache', 
         credentials: 'include', 
         headers: {
-          "Content-Type": "application/json"
+            "Content-Type": "application/json"
         }
-      })
-      window.alert("recipe created successfully");
+    })
+    window.alert("recipe created successfully");
   }
 
   const make = document.getElementById("createrecipe");
   make.addEventListener("submit", inputper);
+  function check() {
+    const userz = document.getElementById("personlist");
+    const options = {
+      method: 'GET', 
+      mode: 'cors', 
+      cache: 'no-cache', 
+      credentials: 'include', 
+      headers: {
+          'Content-Type': 'application/json'
+      },
+    };
+    const geturl = "http://localhost:8195/api/recipes/all";
+    fetch(geturl, options)
+    .then(response => {
+        if (response.status === 401) {
+            window.location.href = '/indochina/restricted'; // redirect to the login page
+        } 
+    })
+  }
+  check();
 
   
 

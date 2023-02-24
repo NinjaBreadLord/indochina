@@ -1,5 +1,7 @@
 {% include home.html %}
 
+<button onclick="deletecookie()">Click me</button>
+
 <h1 style = "text-align: center">Recipes List</h1>
 
 <table id = "personlist">
@@ -27,8 +29,8 @@
 //   checkJwtCookie();
   const userz = document.getElementById("personlist");
 
-  const url = "https://everittcheng.tk/api/recipes/all";
-  // const url = "http://localhost:8195/api/recipes/all";
+  // const url = "https://everittcheng.tk/api/recipes/all";
+  const url = "http://localhost:8195/api/recipes/all";
 
   const options = {
       method: 'GET', 
@@ -44,7 +46,10 @@
   function showList() {
     fetch(url, options)
       .then(response => {
-        if (response.status !== 200) {
+        if (response.status === 401) {
+            window.location.href = '/indochina/restricted'; // redirect to the login page
+        }     
+        else if (response.status !== 200) {
             const errorMsg = 'Database response error: ' + response.status;
             console.log(errorMsg);
             const tr = document.createElement("tr");
@@ -87,7 +92,11 @@
         })
     })
   }
-
+  function deletecookie() {
+    document.cookie = "jwt=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    window.alert("cookie delete");
+  }
+  
   showList();
 </script>
 

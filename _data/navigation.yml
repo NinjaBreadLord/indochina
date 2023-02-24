@@ -2,10 +2,6 @@
   link: /Map
 - name: Reviews
   link: /reviews
-- name: Search
-  link: /search
-- name: Verified Accounts
-  link: /loginlist
 - name: Recipes
   link: /recipelist
 - name: Search by Region
