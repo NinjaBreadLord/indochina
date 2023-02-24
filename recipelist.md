@@ -29,8 +29,8 @@
 //   checkJwtCookie();
   const userz = document.getElementById("personlist");
 
-  // const url = "https://everittcheng.tk/api/recipes/all";
-  const url = "http://localhost:8195/api/recipes/all";
+  const url = "https://everittcheng.tk/api/recipes/all";
+  // const url = "http://localhost:8195/api/recipes/all";
 
   const options = {
       method: 'GET', 
@@ -96,7 +96,7 @@
     document.cookie = "jwt=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     window.alert("cookie delete");
   }
-  
+
   showList();
 </script>
 
