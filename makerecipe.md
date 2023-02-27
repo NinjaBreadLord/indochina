@@ -67,9 +67,9 @@ input[type=submit]:hover {
       const data = new FormData(event.target);
       const urldata = new URLSearchParams(data).toString();
 
-      const url = "https://everittcheng.tk/api/recipes/post/?"
-      const geturl = "https://everittcheng.tk/api/recipes/all"
-      // const url = "http://localhost:8195/api/recipes/post/?"
+      const url = "https://everittcheng.tk/api/recipes/post/?";
+      
+      // const url = "http://localhost:8195/api/recipes/post/?";
 
       //Lowkey ion think this should be local host
 
@@ -99,6 +99,7 @@ input[type=submit]:hover {
       },
     };
     // const geturl = "http://localhost:8195/api/recipes/all";
+    const geturl = "https://everittcheng.tk/api/recipes/all";
     fetch(geturl, options)
     .then(response => {
         if (response.status === 401) {
