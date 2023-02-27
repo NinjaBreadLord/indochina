@@ -51,6 +51,10 @@
         fetch(login_url, requestOptions)
             .then(response => {
                 // trap error response from Web API
+              if (response.status == 200) {
+                    window.alert("Successfully logged in");
+                    localStorage.setItem("email", email1);
+              }
               if (response.status !== 200) {
                 window.location.href = '/indochina/jwtsignin';
               }
@@ -61,10 +65,8 @@
                 window.alert("incorrect login");
               }
               return response.text();
-              window.alert("successfully logged in");
-              if (response.status == 200) {
-                    localStorage.setItem("email", email1);
-              }
+              
+
             })
 
             
