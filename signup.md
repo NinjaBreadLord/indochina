@@ -70,7 +70,7 @@
               <input type="text" class="form-control" id="email" name="email" placeholder="email" required>
             </div>
             <div class="form-group">
-                  <input type="text" class="form-control" id="password" name="password" placeholder="password" required>
+                  <input type="password" class="form-control" id="password" name="password" placeholder="password" required>
             </div>
             <div class="form-group">
               <input type="text" class="form-control" id="dob" name="dob" placeholder="Birth Date(MO-DA-YEAR)" required>
@@ -98,8 +98,8 @@
       const data = new FormData(event.target);
       const urldata = new URLSearchParams(data).toString();
 
-      //const url = "https://everittcheng.tk/api/person/post/?"
-      const url = "http://localhost:8195/api/person/post/?"  
+      const url = "https://everittcheng.tk/api/person/post/?"
+      // const url = "http://localhost:8195/api/person/post/?"  
       //Lowkey ion think this should be local host
       fetch(url + urldata, {
         method: 'POST', 
