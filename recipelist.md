@@ -12,7 +12,6 @@
         <th style = "width: 50px;">Prep Time</th>
         <th style = "width: 200px;">Ingredients</th>
         <th style = "width: 400px;">Description</th>
-        <button onclick="deleterecipe()">Delete</button>
       </tr>
     </thead>
     <tbody></tbody>
@@ -99,36 +98,6 @@
     window.alert("cookie delete");
   }
 
-  function deleterecipe() {
-    for (const row of data) {
-
-      const tr = document.removeChild("tr");
-      const name = document.removeChild("td");
-      const ingredients = document.removeChild("td");
-      const description = document.removeChild("td");
-      const region = document.removeChild("td");
-      const preparation = document.removeChild("td");
-                
-
-
-      name.innerHTML = row.name;
-      ingredients.innerHTML = row.ingredients;
-      description.innerHTML = row.description;
-      region.innerHTML = row.region;
-      preparation.innerHTML = row.preparation;
-
-
-
-      tr.appendChild(name);
-      tr.appendChild(region);
-      tr.appendChild(preparation);
-      tr.appendChild(ingredients);
-      tr.appendChild(description);
-
-
-
-    userz.appendChild(tr);
-  }
   showList();
 </script>
 
