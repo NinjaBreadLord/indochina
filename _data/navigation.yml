@@ -12,4 +12,6 @@
   link: /jwtsignin
 - name: Sign Up
   link: /signup
+- name: Edit
+  link: /update
 
