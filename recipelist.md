@@ -75,6 +75,7 @@
               const description = document.createElement("td");
               const region = document.createElement("td");
               const preparation = document.createElement("td");
+              
 
 
               name.innerHTML = row.name;
