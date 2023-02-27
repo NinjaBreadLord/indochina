@@ -1,6 +1,6 @@
 {% include home.html %}
 
-<button onclick="deletecookie()">Click me</button>
+<button onclick="deletecookie()">Log Out</button>
 
 <h1 style = "text-align: center">Recipes List</h1>
 
