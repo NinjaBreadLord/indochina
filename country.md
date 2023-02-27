@@ -5,7 +5,7 @@
 <form action="javascript:showList()">
   <label for="country">Region:</label>
   <select id="country" name="country">
-    <option value="The Americas">Americas</option>
+    <option value="TheAmericas">Americas</option>
     <option value="East and Southeast Asia">East and Southeast Asia</option>
     <option value="Subsaharan Africa">Africas</option>
     <option value="South Asia">South Asia</option>
