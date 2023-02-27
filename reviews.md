@@ -1,3 +1,4 @@
+{% include home.html %}
 <html>
   <head>
     <style>

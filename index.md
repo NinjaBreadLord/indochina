@@ -2,6 +2,7 @@
 layout: page
 title: Welcome
 ---
+{% include home.html %}
 
 <header>
     <h1>Welcome to the Book of Cook</h1>

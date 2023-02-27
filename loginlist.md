@@ -2,11 +2,13 @@
 
 <h1 style = "text-align: center">Logins List</h1>
 
+
+
 <table id = "personlist">
     <thead>
       <tr>
         <th>id</th>
-        <th>email</th>
+        <th>email</th>  
         <th>password</th>
       </tr>
     </thead>
@@ -78,6 +80,7 @@
             }
         })
     })
+
   }
 
   showList();

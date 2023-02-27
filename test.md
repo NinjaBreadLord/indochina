@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Cookie Example</title>
+    <title>Cookie Examplee</title>
   </head>
   <body>
     <button onclick="createCookie()">Create Cookie</button>
@@ -27,7 +27,7 @@
       }
       // Function to delete the cookie with the name "myCookie"
       function deleteCookie() {
-        document.cookie = "myCookie=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/indochina;";
+        document.cookie = "cookieName=jwt; expires=Thu, 01 Jan 1970 00:00:00 UTC; domain=localhost; path=/;";
         console.log("Cookie deleted");
       }
     </script>
