@@ -64,7 +64,6 @@
               window.alert("successfully logged in");
               if (response.status == 200) {
                     localStorage.setItem("email", email1);
-                    window.location.href = '/indochina/';
               }
             })
 
