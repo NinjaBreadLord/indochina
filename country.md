@@ -2,13 +2,23 @@
 
 <h1 style = "text-align: center">Search by Region</h1>
 
+<form action="javascript:showList()">
+  <label for="country">Region:</label>
+  <select id="country" name="country">
+    <option value="The Americas">Americas</option>
+    <option value="East and Southeast Asia">East and Southeast Asia</option>
+    <option value="Subsaharan Africa">Africas</option>
+    <option value="South Asia">South Asia</option>
+    <option value="MiddleEast, North Africa, Central Asia">Middle East, North Africa, Central Asia</option>
+    <option value="Europe">Europe</option>
+    <option value="Oceania">Oceania</option>
+  </select>
+  <input value="Submit" type="submit" class="button"/>
+<form>
 
 
-  <form action="javascript:showList()">
-    <label for = "country" class = "label-1">Country:</label><br>
-    <input type = "text" id = "country" name = "country" class = "country"><br>
-    <input value="Submit" type="submit" class="button"/>
-  <form>
+    
+
 
 <table id = "personlist">
     <thead>
