@@ -52,7 +52,7 @@
             .then(response => {
                 // trap error response from Web API
               if (response.status !== 200) {
-                window.location.href = '/indochina/jwtsignin';
+                window.alert("Incorrect Login");
               }
               if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
@@ -64,6 +64,7 @@
               window.alert("successfully logged in");
               if (response.status == 200) {
                     localStorage.setItem("email", email1);
+                    window.location.href = '/indochina/';
               }
             })
 
