@@ -15,7 +15,12 @@
         <!--<button onclick="deleterecipe()">Delete</button>-->
       </tr>
     </thead>
-    <tbody></tbody>
+    <tbody>      
+        <tr th:each="user : ${userList}">
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.email}"></td>
+        <td><a th:href="@{/users/{id}/edit(id=${user.id})}">Edit</a></td>
+</tbody>
 </table>
 
 <script>
