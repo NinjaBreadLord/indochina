@@ -51,6 +51,9 @@
         fetch(login_url, requestOptions)
             .then(response => {
                 // trap error response from Web API
+              if (response.status !== 200) {
+                window.location.href = '/indochina/jwtsignin';
+              }
               if (!response.ok) {
                 const errorMsg = 'Login error: ' + response.status;
                 console.log(errorMsg);
