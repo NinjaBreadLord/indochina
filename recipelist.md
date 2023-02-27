@@ -128,7 +128,8 @@
 
 
 
-    userz.appendChild(tr);
+      userz.appendChild(tr);
+    }
   }
   showList();
 </script>
